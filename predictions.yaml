@@ -1,0 +1,27 @@
+# Freeze this file with `vla-preregister` before any policy run.
+recorded_before_runs: true
+date: "2026-08-11"
+hypotheses:
+  - id: H1
+    prediction: >-
+      Zero-shot success will be non-zero but strongly task-dependent. Replacing the correct
+      instruction with a cyclically wrong instruction will reduce mean success by at least
+      10 percentage points; a smaller change would indicate weak language conditioning.
+  - id: H2
+    prediction: >-
+      The baseline curve will rise monotonically with diminishing returns from 10 to 25 demos.
+  - id: H3
+    prediction: >-
+      LoRA plus mild image augmentation will beat full action-expert fine-tuning at 5, 10 and
+      25 demos. The absolute gain will be largest at 5 demos because overfitting is strongest.
+  - id: H4
+    prediction: >-
+      The small temporal-progress critic will rank gross failures below near-completions but
+      will confuse reversible motion with progress. Robometer will correlate better with true
+      success, while both signals remain vulnerable to reward hacking.
+expected_shape:
+  zero_shot_percent: 8
+  baseline_percent: {5: 18, 10: 31, 25: 47}
+  method_percent: {5: 28, 10: 41, 25: 54}
+  note: "Numbers are preregistered expectations, never substitutes for measurements."
+

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-08-12T08:49:34.235694+00:00",
+  "status": "pass",
+  "checks": {
+    "platform": {
+      "ok": true,
+      "system": "Linux",
+      "release": "6.6.87.2-microsoft-standard-WSL2",
+      "python": "3.12.3"
+    },
+    "gpu": {
+      "ok": true,
+      "torch": "2.7.1+cu126",
+      "cuda_runtime": "12.6",
+      "cuda_available": true,
+      "device": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "compute_capability": [
+        8,
+        9
+      ],
+      "max_memory_allocated_mib": 68.1,
+      "checksum": 2.821026
+    },
+    "packages": {
+      "lerobot": "0.6.2",
+      "hf-libero": "0.1.4",
+      "mujoco": "3.8.1",
+      "peft": "0.20.0",
+      "torchcodec": "0.5",
+      "ok": true
+    },
+    "ffmpeg": {
+      "ok": true,
+      "path": "/usr/bin/ffmpeg",
+      "version": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers"
+    },
+    "cmake": {
+      "ok": true,
+      "path": "/usr/bin/cmake",
+      "version": "cmake version 3.28.3"
+    },
+    "lerobot_source": {
+      "ok": true,
+      "source": "/home/root/src/lerobot-vla-budget",
+      "revision": "9e14584904d14eb79dc960b27bb40220f85bb993",
+      "dirty": false
+    },
+    "protocol": {
+      "ok": true,
+      "manifest_sha256": "82ddbb8c6248486c444c8ffd0a6e4328097441c833884332385e4cdc5d9e742b",
+      "manifest_digest_ok": true,
+      "preregistration_sha256": "9f59185ce2a066600ff371ad76a55a92a0fe6d29eccbbd581222d190f793eae1",
+      "preregistration_digest_ok": true,
+      "seen_tasks": 73,
+      "seen_episodes": 3921,
+      "target_task_ids": [
+        0,
+        1,
+        2
+      ]
+    },
+    "environment": {
+      "ok": true,
+      "suite": "libero_goal",
+      "task_id": 0,
+      "prompt": "open the middle drawer of the cabinet",
+      "manifest_prompt": "open the middle drawer of the cabinet",
+      "prompt_matches_manifest": true,
+      "camera_keys": [
+        "image",
+        "wrist_image"
+      ],
+      "camera_shapes": {
+        "image": [
+          1,
+          256,
+          256,
+          3
+        ],
+        "wrist_image": [
+          1,
+          256,
+          256,
+          3
+        ]
+      },
+      "state_shape": [
+        1,
+        3
+      ],
+      "step": {
+        "reward": [
+          0.0
+        ],
+        "terminated": [
+          false
+        ],
+        "truncated": [
+          false
+        ],
+        "is_success": [
+          false
+        ]
+      }
+    }
+  }
+}

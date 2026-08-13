@@ -1,0 +1,43 @@
+# Paths are relative to the repository root.
+dataset:
+  repo_id: nvidia/LIBERO_LeRobot_v3
+  revision: main
+  local_dir: data/LIBERO_LeRobot_v3
+  seen_suite: libero_90
+  target_suite: libero_goal
+  target_task_ids: [0, 1, 2]
+  # Canonical hf-libero simulator order. NVIDIA's converted task_index order differs.
+  target_prompts:
+    0: open the middle drawer of the cabinet
+    1: put the bowl on the stove
+    2: put the wine bottle on top of the cabinet
+
+model:
+  base: lerobot/smolvla_base
+  # SmolVLA already contains the VLM weights. This reference is used only for
+  # the processor/config, avoiding a redundant 2 GB backbone download.
+  vlm_model_name: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+  load_vlm_weights: false
+  seen_steps: 100000
+  adaptation_steps: 10000
+  batch_size: 8
+  num_workers: 4
+  mixed_precision: bf16
+  n_action_steps: 10
+
+protocol:
+  budgets: [5, 10, 25]
+  train_seeds: [17, 29]
+  eval_seed: 1000
+  eval_episodes: 20
+
+method:
+  lora_rank: 16
+  lora_alpha: 16
+  max_num_transforms: 2
+
+paths:
+  manifest: artifacts/protocol_manifest.json
+  preregistration: artifacts/preregistration.json
+  outputs: outputs
+  results: artifacts/results

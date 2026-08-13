@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vla-budget"
+version = "0.1.0"
+description = "Leakage-safe low-demo adaptation protocol for SmolVLA on LIBERO"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "huggingface-hub>=0.34,<2",
+  "matplotlib>=3.9,<4",
+  "numpy>=2.0,<3",
+  "pyarrow>=18,<26",
+  "pyyaml>=6.0,<7",
+  "scipy>=1.14,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<9", "ruff>=0.12,<1"]
+bonus = ["av>=15,<16", "torch>=2.7,<3", "torchvision>=0.22,<1"]
+report = ["pillow>=11,<12", "reportlab>=4.2,<5"]
+
+[project.scripts]
+vla-download = "vla_budget.download:main"
+vla-manifest = "vla_budget.protocol:main"
+vla-preregister = "vla_budget.preregister:main"
+vla-run = "vla_budget.runner:main"
+vla-aggregate = "vla_budget.aggregate:main"
+vla-progress = "vla_budget.progress_critic:main"
+vla-bonus = "vla_budget.bonus:main"
+vla-failures = "vla_budget.failures:main"
+vla-doctor = "vla_budget.doctor:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vla_budget"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

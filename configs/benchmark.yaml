@@ -1,0 +1,42 @@
+# Completed compute-limited protocol for a single RTX 4070 Ti SUPER.
+dataset:
+  repo_id: nvidia/LIBERO_LeRobot_v3
+  revision: main
+  local_dir: data/LIBERO_LeRobot_v3
+  seen_suite: libero_90
+  target_suite: libero_goal
+  target_task_ids: [0, 1, 2]
+  target_prompts:
+    0: open the middle drawer of the cabinet
+    1: put the bowl on the stove
+    2: put the wine bottle on top of the cabinet
+
+model:
+  base: lerobot/smolvla_base
+  vlm_model_name: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+  load_vlm_weights: false
+  seen_steps: 5000
+  adaptation_steps: 500
+  batch_size: 8
+  num_workers: 4
+  mixed_precision: bf16
+  n_action_steps: 10
+
+protocol:
+  budgets: [5, 10, 25]
+  train_seeds: [17, 29]
+  eval_seed: 1000
+  eval_episodes: 20
+  eval_batch_size: 4
+  eval_async: false
+
+method:
+  lora_rank: 16
+  lora_alpha: 16
+  max_num_transforms: 2
+
+paths:
+  manifest: artifacts/protocol_manifest.json
+  preregistration: artifacts/preregistration.json
+  outputs: outputs/benchmark
+  results: artifacts/results
