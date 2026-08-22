@@ -1,5 +1,8 @@
 # Low-demo adaptation of SmolVLA on LIBERO
 
+[![Repository checks](https://github.com/YaroslavPelekhov/smolvla-libero-low-demo/actions/workflows/ci.yml/badge.svg)](https://github.com/YaroslavPelekhov/smolvla-libero-low-demo/actions/workflows/ci.yml)
+[![Python 3.11--3.12](https://img.shields.io/badge/python-3.11--3.12-315A7D.svg)](https://www.python.org/)
+
 This repository contains a preregistered, leakage-safe study of SmolVLA adaptation to three held-out
 LIBERO-Goal tasks. The final ceiling extension evaluates the difficult 1/2-demo regime together with
 5/10/25 demos on a fresh reset seed. Its conclusion is unambiguous: Cross-Seed Weight Interpolation
@@ -98,6 +101,15 @@ pytest -q
 vla-verify
 ```
 
+For a submission-grade local release, use the single fail-closed gate:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/release_gate.ps1
+```
+
+It runs formatting checks, the complete unit suite, evidence verification, a fresh four-page LaTeX
+build, PDF verification, and Git whitespace checks. No smoke-test result is accepted as final evidence.
+
 `vla-verify` checks five preregistration hashes, both protocol-manifest digests, all 192 retained cells,
 the 20-outcome vectors, recomputed paired statistics for four matrices, three real failure artifacts,
 42 Bonus B rankings, and the final PDF signature.
@@ -187,3 +199,11 @@ References: [SmolVLA](https://arxiv.org/abs/2506.01844),
 [LIBERO](https://arxiv.org/abs/2306.03310),
 [LeRobot LIBERO](https://huggingface.co/docs/lerobot/libero), and
 [Robometer](https://robometer.github.io/).
+
+## Research-release policy
+
+The repository is an auditable research artifact, not a supported robot-control product. See
+[`CONTRIBUTING.md`](CONTRIBUTING.md) for the evidence-preserving change process,
+[`SECURITY.md`](SECURITY.md) for responsible disclosure and deployment limits, and
+[`CITATION.cff`](CITATION.cff) for citation metadata. Public issues should contain commands and
+minimal logs, but never credentials, private datasets, or raw personally identifiable paths.

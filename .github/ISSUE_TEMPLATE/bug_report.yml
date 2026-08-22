@@ -1,0 +1,41 @@
+name: Reproducibility or correctness bug
+description: Report a reproducible problem in code, evidence validation, or report generation.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, private paths, model weights, or unpublished data."
+  - type: input
+    id: commit
+    attributes:
+      label: Commit
+      description: Full Git commit SHA where the problem occurs.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and observed output
+      description: Provide the minimal command and a redacted error excerpt.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence
+    attributes:
+      label: Evidence class affected
+      options:
+        - Code only
+        - Registered result
+        - Diagnostic result
+        - Excluded audit
+        - LaTeX/PDF report
+    validations:
+      required: true

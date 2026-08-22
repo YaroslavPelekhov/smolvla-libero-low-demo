@@ -2,18 +2,41 @@ name: repository-checks
 
 on:
   push:
+    branches: [main]
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   unit-and-evidence:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
           cache: pip
+      - run: python -m pip install --upgrade pip
       - run: python -m pip install -e ".[dev]"
       - run: ruff check src tests report
       - run: pytest -q
+      - run: python -m compileall -q src
       - run: vla-verify --without-pdf
+      - name: Verify generated report tables
+        run: |
+          python report/build_latex_assets.py \
+            --results artifacts/results_ceiling \
+            --bonus-results artifacts/results/reward_ranking.json \
+            --report-dir report
+          git diff --exit-code -- report/generated_results.tex

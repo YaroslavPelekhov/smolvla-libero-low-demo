@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security or private disclosure
+    url: mailto:pelekhovym@my.msu.ru
+    about: Use private email for credentials, host details, or security-sensitive reports.
