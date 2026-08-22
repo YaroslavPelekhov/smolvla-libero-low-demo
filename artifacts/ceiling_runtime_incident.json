@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "date": "2026-08-21--2026-08-22",
+  "phase": "ceiling_extension_v6",
+  "observed_failure": "Windows disk exhaustion interrupted WSL and produced an Input/output error. Completed markers allowed exact resume; later evaluation exposed zero-length serialization metadata in baseline and stabilized budget-1/task-0/seed-17 checkpoints.",
+  "scientific_state": "Both affected model.safetensors files opened successfully with 500 tensors and 450046176 parameters. The stabilized soup manifest and output hash were intact. No affected evaluation contributed an outcome before metadata recovery.",
+  "recovery": "Incomplete training resumed from the operational step-8000 checkpoint to the preregistered 10000 updates. For the two complete policies, deterministic tokenizer and processor JSON files were restored from the corresponding completed peer, and normalizer tensors were restored from the same immutable task/budget subset. Learned model tensors were not replaced or modified. The original 20-episode cells then completed under reset seed 4000.",
+  "final_state": "All 72 registered ceiling evaluation cells completed and aggregation validation passed with 1440 outcomes.",
+  "estimand_changed": false
+}

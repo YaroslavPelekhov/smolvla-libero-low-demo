@@ -12,7 +12,7 @@ from .config import load_config, resolve
 def main() -> None:
     parser = argparse.ArgumentParser(description="Freeze predictions before experiment execution")
     parser.add_argument("--config", default="configs/experiment.yaml")
-    parser.add_argument("--predictions", default="predictions.yaml")
+    parser.add_argument("--predictions", default="predictions_v2.yaml")
     args = parser.parse_args()
     cfg = load_config(args.config)
     predictions = resolve(args.predictions)

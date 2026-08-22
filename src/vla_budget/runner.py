@@ -14,6 +14,7 @@ from pathlib import Path
 
 from .config import load_config, resolve
 from .protocol import manifest_digest
+from .subset import ensure_subset_overlay
 
 
 @dataclass(frozen=True)
@@ -22,6 +23,7 @@ class Run:
     output_dir: Path
     command: list[str]
     metadata: dict
+    subset: tuple[Path, Path, tuple[int, ...], Path | None] | None = None
 
 
 def _json_list(values: Iterable[int]) -> str:
@@ -67,7 +69,7 @@ def _common_train(cfg: dict, policy: Path | str, root: Path, output: Path, seed:
         "--cudnn_deterministic=true",
         f"--accelerator.mixed_precision={model.get('mixed_precision', 'bf16')}",
         "--env_eval_freq=0",
-        "--save_freq=0",
+        f"--save_freq={model.get('save_freq', 10000)}",
         "--wandb.enable=false",
     ]
     if "load_vlm_weights" in model:
@@ -99,6 +101,10 @@ def _eval_command(
         f"--env.task_ids=[{task_id}]",
         '--env.camera_name_mapping={"agentview_image":"image","robot0_eye_in_hand_image":"wrist_image"}',
         "--env.control_mode=relative",
+        # NVIDIA/LIBERO_LeRobot_v3 stores the binary gripper as 1=open,
+        # 0=closed.  Native LIBERO expects -1=open, +1=closed, so evaluation
+        # must apply g_env = 1 - 2*g_dataset after policy unnormalization.
+        "--env.gripper_action_mode=binary_01",
         "--env.observation_height=256",
         "--env.observation_width=256",
         f"--env.max_parallel_tasks={eval_batch_size}",
@@ -160,12 +166,65 @@ def build_runs(cfg: dict, manifest: dict, stage: str, recording: bool = False) -
                 runs.append(Run("eval", output, command, meta))
         return runs
 
+    if stage in {"stabilized", "task_vector", "consensus_vector", "adaptive_merge"}:
+        for budget in budgets:
+            for task_id in task_ids:
+                episodes = manifest["target"]["tasks"][str(task_id)]["episodes"][str(budget)]
+                for seed in seeds:
+                    policy = _checkpoint(
+                        output_root
+                        / "train"
+                        / stage
+                        / f"budget-{budget}"
+                        / f"task-{task_id}"
+                        / f"seed-{seed}"
+                    )
+                    output = (
+                        output_root
+                        / "eval"
+                        / stage
+                        / f"budget-{budget}"
+                        / f"task-{task_id}"
+                        / f"seed-{seed}"
+                    )
+                    metadata = {
+                        "stage": stage,
+                        "method": stage,
+                        "budget": budget,
+                        "task_id": task_id,
+                        "seed": seed,
+                        "episodes": episodes,
+                        "normalization_scope": "selected_target",
+                        "interpolation_partner_weight": float(
+                            cfg["method"].get("partner_weight", 0.25)
+                        ),
+                    }
+                    runs.append(
+                        Run(
+                            "eval",
+                            output,
+                            _eval_command(cfg, policy, output, task_id, recording=recording),
+                            metadata,
+                        )
+                    )
+        return runs
+
     if stage not in {"baseline", "method"}:
         raise ValueError(stage)
 
     for budget in budgets:
         for task_id in task_ids:
             episodes = manifest["target"]["tasks"][str(task_id)]["episodes"][str(budget)]
+            strict_stats = bool(cfg["protocol"].get("strict_subset_stats", True))
+            normalization = "seen_anchor" if stage == "method" else "selected_target"
+            subset_root = (
+                output_root
+                / "subset_data"
+                / normalization
+                / f"task-{task_id}"
+                / f"budget-{budget}"
+            )
+            train_root = subset_root if strict_stats else target_root
             for seed in seeds:
                 seen_policy = _checkpoint(output_root / "train" / "seen" / f"seed-{seed}")
                 train_dir = (
@@ -176,24 +235,13 @@ def build_runs(cfg: dict, manifest: dict, stage: str, recording: bool = False) -
                     / f"task-{task_id}"
                     / f"seed-{seed}"
                 )
-                command = _common_train(cfg, seen_policy, target_root, train_dir, seed)
+                command = _common_train(cfg, seen_policy, train_root, train_dir, seed)
                 command.extend(
                     [
                         f"--dataset.episodes={_json_list(episodes)}",
                         f"--steps={cfg['model']['adaptation_steps']}",
                     ]
                 )
-                if stage == "method":
-                    command.extend(
-                        [
-                            "--peft.method_type=LORA",
-                            f"--peft.r={cfg['method']['lora_rank']}",
-                            f"--peft.lora_alpha={cfg['method'].get('lora_alpha', cfg['method']['lora_rank'])}",
-                            "--dataset.image_transforms.enable=true",
-                            "--dataset.image_transforms.random_order=true",
-                            f"--dataset.image_transforms.max_num_transforms={cfg['method']['max_num_transforms']}",
-                        ]
-                    )
                 train_meta = {
                     "stage": stage,
                     "method": stage,
@@ -201,8 +249,17 @@ def build_runs(cfg: dict, manifest: dict, stage: str, recording: bool = False) -
                     "task_id": task_id,
                     "seed": seed,
                     "episodes": episodes,
+                    "normalization_scope": (
+                        normalization if strict_stats else "dataset_global"
+                    ),
                 }
-                runs.append(Run("train", train_dir, command, train_meta))
+                stats_anchor = seen_root if stage == "method" else None
+                subset = (
+                    (target_root, subset_root, tuple(episodes), stats_anchor)
+                    if strict_stats
+                    else None
+                )
+                runs.append(Run("train", train_dir, command, train_meta, subset))
 
                 eval_dir = (
                     output_root
@@ -223,7 +280,33 @@ def _format(command: list[str]) -> str:
     return shlex.join(command)
 
 
-def _execute_run(run: Run, *, stream_output: bool) -> None:
+def _latest_resume_config(output_dir: Path) -> Path | None:
+    checkpoints = output_dir / "checkpoints"
+    if not checkpoints.exists():
+        return None
+    candidates = sorted(
+        (
+            path / "pretrained_model" / "train_config.json"
+            for path in checkpoints.iterdir()
+            if path.is_dir() and path.name.isdigit()
+        ),
+        key=lambda path: int(path.parents[1].name),
+        reverse=True,
+    )
+    return next((path for path in candidates if path.exists()), None)
+
+
+def _execute_run(
+    run: Run, *, stream_output: bool, resume_incomplete: bool = False
+) -> None:
+    if run.subset is not None:
+        source_root, output_root, episodes, stats_source_root = run.subset
+        ensure_subset_overlay(
+            source_root,
+            output_root,
+            list(episodes),
+            stats_source_root=stats_source_root,
+        )
     if run.kind == "eval":
         policy_arg = next(arg for arg in run.command if arg.startswith("--policy.path="))
         policy_value = policy_arg.split("=", 1)[1]
@@ -231,18 +314,30 @@ def _execute_run(run: Run, *, stream_output: bool) -> None:
         is_hub_id = "/" in policy_value and not policy_path.is_absolute()
         if not is_hub_id and not policy_path.exists():
             raise FileNotFoundError(f"Policy checkpoint not found: {policy_path}")
+    command = run.command
     if run.output_dir.exists():
-        raise FileExistsError(
-            f"Output exists without a COMPLETED marker: {run.output_dir}. "
-            "Move it aside or choose a new --output-root."
+        resume_config = (
+            _latest_resume_config(run.output_dir)
+            if resume_incomplete and run.kind == "train"
+            else None
+        )
+        if resume_config is None:
+            raise FileExistsError(
+                f"Output exists without a COMPLETED marker: {run.output_dir}. "
+                "Use --resume-incomplete for a checkpointed training run, move it aside, "
+                "or choose a new --output-root."
+            )
+        command = [run.command[0], f"--config_path={resume_config}", "--resume=true"]
+        (run.output_dir / "resume_command.txt").write_text(
+            _format(command) + "\n", encoding="utf-8"
         )
     run.output_dir.parent.mkdir(parents=True, exist_ok=True)
     if stream_output:
-        subprocess.run(run.command, check=True)
+        subprocess.run(command, check=True)
     else:
         temp_log = run.output_dir.parent / f".{run.output_dir.name}.run.log"
         with temp_log.open("w", encoding="utf-8") as log:
-            subprocess.run(run.command, check=True, stdout=log, stderr=subprocess.STDOUT)
+            subprocess.run(command, check=True, stdout=log, stderr=subprocess.STDOUT)
         temp_log.replace(run.output_dir / "run.log")
     (run.output_dir / "run_meta.json").write_text(
         json.dumps(run.metadata, indent=2) + "\n", encoding="utf-8"
@@ -255,7 +350,19 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Run the preregistered LIBERO experiment matrix")
     parser.add_argument("--config", default="configs/experiment.yaml")
     parser.add_argument(
-        "--stage", required=True, choices=["seen", "zero", "language", "baseline", "method"]
+        "--stage",
+        required=True,
+        choices=[
+            "seen",
+            "zero",
+            "language",
+            "baseline",
+            "method",
+            "stabilized",
+            "task_vector",
+            "consensus_vector",
+            "adaptive_merge",
+        ],
     )
     parser.add_argument("--execute", action="store_true", help="Run commands; default is a dry run")
     parser.add_argument(
@@ -283,7 +390,15 @@ def main() -> None:
         action="store_true",
         help="Skip run units that already contain a COMPLETED marker",
     )
+    parser.add_argument(
+        "--resume-incomplete",
+        action="store_true",
+        help="Resume an incomplete training unit from its latest full checkpoint",
+    )
     parser.add_argument("--kind", choices=["all", "train", "eval"], default="all")
+    parser.add_argument("--budget", type=int, help="Select one demonstration budget")
+    parser.add_argument("--task-id", type=int, help="Select one target task")
+    parser.add_argument("--train-seed", type=int, help="Select one training seed")
     parser.add_argument(
         "--jobs",
         type=int,
@@ -308,12 +423,20 @@ def main() -> None:
     if manifest.get("sha256") != manifest_digest(manifest):
         raise SystemExit("Protocol manifest hash mismatch")
     prereg = json.loads(prereg_path.read_text(encoding="utf-8"))
-    prediction_hash = hashlib.sha256(resolve("predictions.yaml").read_bytes()).hexdigest()
+    prediction_hash = hashlib.sha256(
+        resolve(prereg["predictions_file"]).read_bytes()
+    ).hexdigest()
     if prereg.get("sha256") != prediction_hash:
         raise SystemExit("Predictions changed after preregistration")
     runs = build_runs(cfg, manifest, args.stage, recording=args.recording)
     if args.kind != "all":
         runs = [run for run in runs if run.kind == args.kind]
+    if args.budget is not None:
+        runs = [run for run in runs if run.metadata.get("budget") == args.budget]
+    if args.task_id is not None:
+        runs = [run for run in runs if run.metadata.get("task_id") == args.task_id]
+    if args.train_seed is not None:
+        runs = [run for run in runs if run.metadata.get("seed") == args.train_seed]
     if args.limit_runs is not None:
         if args.limit_runs <= 0:
             raise SystemExit("--limit-runs must be positive")
@@ -337,11 +460,23 @@ def main() -> None:
         raise SystemExit("Concurrent training is disabled; use --jobs=1 for train units")
     if args.jobs == 1:
         for run in selected:
-            _execute_run(run, stream_output=True)
+            _execute_run(
+                run,
+                stream_output=True,
+                resume_incomplete=args.resume_incomplete,
+            )
         return
     failures = []
     with ThreadPoolExecutor(max_workers=args.jobs) as executor:
-        future_map = {executor.submit(_execute_run, run, stream_output=False): run for run in selected}
+        future_map = {
+            executor.submit(
+                _execute_run,
+                run,
+                stream_output=False,
+                resume_incomplete=args.resume_incomplete,
+            ): run
+            for run in selected
+        }
         for future in as_completed(future_map):
             run = future_map[future]
             try:

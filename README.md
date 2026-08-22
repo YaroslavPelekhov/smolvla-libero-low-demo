@@ -1,68 +1,112 @@
-# Low-demo SmolVLA adaptation on LIBERO
+# Low-demo adaptation of SmolVLA on LIBERO
 
-This repository is a reproducible, leakage-controlled evaluation of SmolVLA adaptation to the first
-three held-out `libero_goal` tasks. It contains the executed experiment matrix, immutable data split,
-raw run metadata, measured results, failure videos, Bonus B evaluators, and a four-page report.
+This repository contains a preregistered, leakage-safe study of SmolVLA adaptation to three held-out
+LIBERO-Goal tasks. The final ceiling extension evaluates the difficult 1/2-demo regime together with
+5/10/25 demos on a fresh reset seed. Its conclusion is unambiguous: Cross-Seed Weight Interpolation
+(**CSWI**) does not robustly improve ordinary target-only fine-tuning.
 
-## Result
+| Target demonstrations | 1 | 2 | 5 | 10 | 25 |
+|---:|---:|---:|---:|---:|---:|
+| Naive target-stat FT (seed 4000) | 64/120 | **95/120** | **118/120** | **115/120** | **111/120** |
+| CSWI (seed 4000) | **66/120** | 92/120 | 115/120 | 111/120 | 110/120 |
+| Paired change, percentage points | +1.7 | -2.5 | -2.5 | -3.3 | -0.8 |
+| Exact McNemar `p` | 0.791 | 0.678 | 0.375 | 0.344 | 1.000 |
 
-The requested matrix is complete: 2 seen-pretraining runs, 36 target-adaptation runs, and 48 evaluation
-runs. Every evaluation run contains 20 simulator episodes, for 960 Bernoulli outcomes in total.
+The preregistered criterion required a positive change at every budget. It is rejected at four of
+five budgets; the only positive point, `k=1`, is two net successes and is not statistically resolved.
+The task decomposition also exposes a floor: at `k=1`, task 0 remains 0/40 for both methods.
 
-| Target demos | Zero-shot | Naive fine-tuning | LoRA + image augmentation |
-|---:|---:|---:|---:|
-| 0 | 0.0% (0/120) | - | - |
-| 5 | - | 0.0% (0/120) | 0.0% (0/120) |
-| 10 | - | 6.7% (8/120) | 0.0% (0/120) |
-| 25 | - | 0.0% (0/120) | 0.0% (0/120) |
+The earlier seed-1000 matrix remains useful as hypothesis-generating evidence: CSWI changed
+`110/120, 114/120, 114/120` into `117/120, 114/120, 117/120`. Its 5-demo gain was +5.8 points
+(10 wins, 3 losses; exact `p=0.092`), but CSTVI on seed 2000 changed the curve by
+`+0.8/+5.0/-4.2` points and BDAM on seed 3000 by `-4.2/-2.5/-2.5` points. All negative confirmations
+are retained; no favorable matrix is selected after the fact.
 
-The proposed method did not beat the baseline. All eight successes came from task 0 under naive
-fine-tuning with ten demonstrations (5/20 for seed 17 and 3/20 for seed 29). The non-monotone baseline
-and complete LoRA failure are retained as measured; no result was imputed or replaced.
-
-The correct-prompt and wrong-prompt zero-shot controls both achieved 0/120, so this experiment cannot
-identify language sensitivity at the observed performance floor.
-
-## Protocol
+## What was actually tested
 
 - Base policy: `lerobot/smolvla_base` (~450M parameters).
-- Seen pool: the full available `nvidia/LIBERO_LeRobot_v3/libero_90` conversion: 73 task ids,
-  3,921 episodes, and 569,249 frames.
-- Seen training: 5,000 updates for seeds 17 and 29.
-- Held-out tasks: simulator task ids 0-2 from `libero_goal`.
-- Adaptation: 500 updates from the matching seen checkpoint for every task, budget, and seed.
-- Baseline: ordinary action-expert fine-tuning.
-- Proposed method: rank-16 LoRA (`alpha=16`) plus at most two mild random image transforms.
-- Budgets: exact nested prefixes of the first 5, 10, and 25 dataset episodes.
-- Evaluation: 20 episodes per task/checkpoint, 300-step horizon, reset seed 1000.
+- Seen data: all available `nvidia/LIBERO_LeRobot_v3/libero_90` data (73 tasks, 3,921 episodes,
+  569,249 frames).
+- Held-out tasks: simulator task ids 0--2 from `libero_goal`.
+- Budgets: immutable nested prefixes of 1, 2, 5, 10, and 25 demonstrations per task.
+- Optimization: 100k seen updates, then 10k target updates; batch 8; seeds 17 and 29.
+- Evaluation: 20 episodes per task/checkpoint, reset seeds 1000, 2000, 3000, and 4000; horizon 300.
+- Checked evidence: 192 unique evaluation cells and 3,840 Boolean outcomes across CSWI, CSTVI, BDAM,
+  their paired baselines, and two complete control blocks.
+- Every follow-up has a content-addressed prediction file frozen before its evaluation.
 
-The 5,000/500 update counts are the only compute reduction. The requested tasks, budgets, two training
-seeds, and 20-episode evaluation denominators were not reduced.
+For each task and budget, ordinary fine-tuning produces two branches, `w17` and `w29`. CSWI builds
+two conservative interpolations:
 
-## Data identity audit
+```text
+w'17 = 0.75 w17 + 0.25 w29
+w'29 = 0.75 w29 + 0.25 w17
+```
 
-The simulator and converted dataset do not use the same task ordering. Target demonstrations are
-therefore joined by exact canonical instruction rather than numeric id:
+Every generated checkpoint records source and output SHA-256 hashes, tensor counts, shapes, dtypes,
+and interpolation weights. Each anchor keeps its own target-only processor.
 
-| Simulator id | Dataset task index | Canonical instruction | First five episode ids |
-|---:|---:|---|---|
-| 0 | 9 | open the middle drawer of the cabinet | 20, 26, 31, 42, 58 |
-| 1 | 7 | put the bowl on the stove | 13, 15, 16, 22, 36 |
-| 2 | 4 | put the wine bottle on top of the cabinet | 6, 10, 17, 18, 25 |
+## The integration error that mattered
 
-The public 40-task checkpoint was not used because its training universe overlaps the held-out goal
-tasks. The exact prefixes and prompt mapping are frozen in `artifacts/protocol_manifest.json`.
+Two silent interface problems were found before final reporting.
 
-## Environment
+1. LeRobot's episode filter did not restrict `meta/stats.json`. The first engineering run therefore
+   normalized with all 52,042 target-suite frames. It is quarantined under `artifacts/audit/`.
+2. The NVIDIA dataset stores the binary gripper as `1=open, 0=closed`, while LIBERO expects
+   `-1=open, +1=closed`. Direct forwarding removed the close command without raising an exception.
+   The pinned bridge implements `g_env = 1 - 2*g_data`.
 
-The completed run used Windows 11 with WSL2 Ubuntu and headless EGL on an RTX 4070 Ti SUPER 16 GB:
+On a causal checkpoint probe, fixing only the evaluation bridge changed 0/8 to 8/8; the registered
+20-episode rerun produced 19/20. Training checkpoints were unaffected, but all 48 evaluation cells
+were rerun. The patch is pinned at
+[`patches/lerobot_libero_binary_gripper.patch`](patches/lerobot_libero_binary_gripper.patch).
 
-- Python 3.12.3;
-- PyTorch 2.7.1+cu126 and TorchCodec 0.5;
-- LeRobot commit `9e14584904d14eb79dc960b27bb40220f85bb993`;
-- hf-libero 0.1.4, MuJoCo 3.8.1, PEFT 0.20.0.
+## Repository map
 
-Install the pinned environment inside WSL:
+```text
+configs/benchmark.yaml          phase I: baseline and SAN-FT ablation
+configs/final.yaml              phase II: registered CSWI follow-up (seed 1000)
+configs/v4.yaml                 independent CSTVI check (seed 2000)
+configs/v5.yaml                 independent BDAM check (seed 3000)
+configs/ceiling.yaml            fresh 1/2/5/10/25 ceiling extension (seed 4000)
+predictions_v2.yaml             frozen phase-I hypotheses
+predictions_v3.yaml             frozen CSWI coefficient and stopping rule
+predictions_ceiling.yaml        frozen low-demo ceiling hypotheses and stopping rule
+artifacts/results_v3/           final baseline/CSWI evidence
+artifacts/results_v4/           baseline/CSTVI robustness evidence
+artifacts/results_v5/           baseline/BDAM robustness evidence
+artifacts/results_ceiling/      full low-demo ceiling extension
+artifacts/results/              valid SAN-FT ablation and Bonus B
+artifacts/audit/                explicitly excluded diagnostics
+src/vla_budget/                 experiment, aggregation, and verification code
+report/main.tex                 four-page scientific report source
+output/pdf/                     delivery PDF
+```
+
+The detailed [evidence index](artifacts/README.md) marks what is confirmatory, ablative, and
+excluded. The [reproducibility protocol](docs/reproducibility.md) gives the exact fresh-run and
+verification commands.
+
+## Quick verification
+
+Python 3.11 or 3.12 is supported.
+
+```bash
+python -m pip install -e ".[dev]"
+ruff check src tests report
+pytest -q
+vla-verify
+```
+
+`vla-verify` checks five preregistration hashes, both protocol-manifest digests, all 192 retained cells,
+the 20-outcome vectors, recomputed paired statistics for four matrices, three real failure artifacts,
+42 Bonus B rankings, and the final PDF signature.
+
+## Fresh experiment in WSL2
+
+The reference environment is Windows 11 + WSL2 Ubuntu, headless EGL, and an RTX 4070 Ti SUPER 16 GB:
+Python 3.12.3, PyTorch 2.7.1+cu126, TorchCodec 0.5, MuJoCo 3.8.1, `hf-libero` 0.1.4, PEFT 0.20.0,
+and LeRobot commit `9e14584904d14eb79dc960b27bb40220f85bb993`.
 
 ```bash
 sudo VLA_VENV_PATH=/home/$USER/.venvs/vla-budget \
@@ -70,93 +114,74 @@ sudo VLA_VENV_PATH=/home/$USER/.venvs/vla-budget \
   bash scripts/bootstrap_wsl.sh
 
 source /home/$USER/.venvs/vla-budget/bin/activate
-export MUJOCO_GL=egl PYOPENGL_PLATFORM=egl
-vla-doctor --config configs/benchmark.yaml --environment
+export VLA_PROJECT=/mnt/c/path/to/world
+export VLA_DATA=/home/$USER/data/LIBERO_LeRobot_v3
+export VLA_OUTPUT=/home/$USER/outputs/vla-benchmark-final
+export VLA_BASE=/home/$USER/models/smolvla_base
+export VLA_VLM=/home/$USER/models/SmolVLM2-500M-Video-Instruct
+bash scripts/download_assets_wsl.sh
+bash scripts/run_submission_wsl.sh
+# Independent checks after the seed-1000 phase:
+bash scripts/run_v4_confirmatory_wsl.sh
+bash scripts/run_v5_confirmatory_wsl.sh
+# Assignment-recommended ceiling regime and Bonus B:
+bash scripts/run_ceiling_extension_wsl.sh
+bash scripts/continue_postprocess_wsl.sh
 ```
 
-Keep video datasets and checkpoints in the native Linux filesystem; decoding through `/mnt/c` is
-substantially slower.
+The runner is resumable and writes `COMPLETED` only after a successful unit. Training is serial;
+evaluation defaults to two concurrent jobs for 16 GB VRAM.
 
-## Reproduction
+## Exact command-to-task map
 
-Create and freeze the protocol before any policy run:
+| Assignment item | Fresh command | Auditable output |
+|---|---|---|
+| 1. Seen, zero-shot, language, baseline | `bash scripts/run_submission_wsl.sh` | `artifacts/results_v3/` |
+| 2. Method and ceiling regime | `bash scripts/run_ceiling_extension_wsl.sh` | `artifacts/results_ceiling/` |
+| 3. Three real failures | included in `run_submission_wsl.sh` via `vla-failures` | `artifacts/results_v3/failures/` |
+| 4B. Video reward and optimization audit | `bash scripts/continue_postprocess_wsl.sh` | `artifacts/results/reward_*.json` |
+| 5. Predictions, graveyard, discussion | `powershell -File scripts/build_report.ps1` | `output/pdf/vla_budget_report.pdf` |
 
-```bash
-vla-download --config configs/benchmark.yaml --suite both
-vla-manifest --config configs/benchmark.yaml
-vla-preregister --config configs/benchmark.yaml --predictions predictions.yaml
-ruff check src tests report
-pytest -q
+The GPU commands require WSL2/Linux because LIBERO is not executed natively on Windows. Unit tests,
+evidence verification, and report generation are separate so a reviewer can audit committed results
+without retraining 450M-parameter policies.
+
+## Report
+
+The four-page report is generated from committed CSV/JSON evidence. Tables and the vector cost curve
+are rebuilt rather than transcribed by hand; missing data aborts the build.
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/build_report.ps1
+vla-verify
 ```
 
-Run the complete matrix:
+The delivery file is `output/pdf/vla_budget_report.pdf`. The build rejects any page count other than
+four and renders every page through Poppler for visual QA.
 
-```bash
-VLA_PROJECT=/mnt/c/path/to/world \
-VLA_DATA=/home/$USER/data/LIBERO_LeRobot_v3 \
-VLA_OUTPUT=/home/$USER/outputs/vla-benchmark \
-VLA_BASE=/home/$USER/models/smolvla_base \
-VLA_VLM=/home/$USER/models/SmolVLM2-500M-Video-Instruct \
-bash scripts/run_benchmark_wsl.sh
-```
+## Bonus B: reward without simulator access
 
-Each unit writes `command.txt`, `run_meta.json`, and `COMPLETED` only after success. `--skip-completed`
-makes interrupted runs resumable without overwriting completed evidence. Evaluation can be parallelized,
-but the final three units were run serially after the NVIDIA driver returned a transient CUDA error
-under four concurrent jobs; the failed-attempt logs are retained outside the aggregation tree.
+An action-free temporal critic trained on seen videos was compared with Robometer-4B on the same
+deterministic rollout subset. Across 42 checkpoint cells, the small critic nearly collapsed (score
+span 0.0013, Spearman rho -0.323), while Robometer reached rho 0.252 with span 0.298. Robometer is the
+better ranker here, but the correlation is too modest for unaudited policy optimization. Neither
+critic selected a confirmatory checkpoint or influenced CSWI.
 
-Aggregate and extract failures:
+The separate optimization audit then maximized each proxy over four frozen candidate policies in
+each of nine task/budget groups. Five videos per candidate drive selection; true success is computed
+only on the other 15 episodes. The small critic selected policies with 85.9% held-out success, 7.4
+points below the 93.3% baseline reference, and missed the simulator oracle in 5/9 groups. Robometer
+selected 91.1%, 2.2 points below baseline, with 5.9 points mean oracle regret. This is direct evidence
+that maximizing the collapsed temporal proxy rewards the wrong policy; it is a finite-bank
+zeroth-order test, not a claim of gradient-based SmolVLA optimization.
 
-```bash
-vla-aggregate --config configs/benchmark.yaml \
-  --eval-root /home/$USER/outputs/vla-benchmark/eval
-vla-failures --eval-root /home/$USER/outputs/vla-benchmark/eval \
-  --output artifacts/results/failures
-```
+## Scope of the conclusion
 
-LeRobot records all 20 success outcomes per run but its v0.6.2 batched MP4 writer retained ten videos
-per run (480 MP4s total). Failure analysis uses proposed-method runs, where every outcome is a failure.
-Bonus B uses the same deterministic five-video subset per checkpoint and compares its scores with the
-complete 20-episode checkpoint success rate.
-
-## Bonus B: evaluation without simulator reward
-
-The small critic is trained only on RGB from seen demonstrations with normalized temporal position as
-the target; it never reads actions. Robometer-4B receives the same target rollout subset and task text.
-
-```bash
-vla-progress train \
-  --dataset-root /home/$USER/data/LIBERO_LeRobot_v3/libero_90 \
-  --output artifacts/results/progress_critic.pt --epochs 3 --stride 16
-vla-progress score \
-  --checkpoint artifacts/results/progress_critic.pt \
-  --eval-root /home/$USER/outputs/vla-benchmark/eval \
-  --output artifacts/results/progress_scores.json --max-episodes-per-run 5
-vla-bonus robometer-video \
-  --eval-root /home/$USER/outputs/vla-benchmark/eval \
-  --model-path /home/$USER/models/Robometer-4B \
-  --processor-path /home/$USER/models/Qwen3-VL-4B-Instruct \
-  --output artifacts/results/robometer_scores.json --max-episodes-per-run 5
-vla-bonus compare
-```
-
-Neither score is used to optimize the policy. A frozen simulator audit is required before doing so;
-critic improvement with declining simulator success is the preregistered reward-hacking criterion.
-
-## Repository outputs
-
-- `artifacts/preregistration.json`: timestamped SHA-256 of predictions made before policy runs.
-- `artifacts/protocol_manifest.json`: exact prompt join and episode prefixes.
-- `artifacts/results/cost_curve.csv`: pooled measured curve with Wilson intervals.
-- `artifacts/results/per_run.csv`: every task/seed cell and denominator.
-- `artifacts/results/language_control.csv`: paired correct/wrong prompt control.
-- `artifacts/results/failures/`: three real contact sheets, catalog, and source video paths.
-- `artifacts/results/reward_ranking.json`: Bonus B checkpoint ranking.
-- `docs/appendix.md`: implementation notes and interpretation constraints.
-- `output/pdf/vla_budget_report.pdf`: final four-page report.
-
-Rebuild the report with `python report/build_report.py`. The builder refuses to export when required
-measured artifacts are missing.
+The study covers three LIBERO-Goal tasks, two training seeds, four reset seeds, relative control,
+and this exact v3 conversion. Zero-shot success is at the floor, so the language control is
+inconclusive. CSWI can repair seed-specific failures on one matrix, but weight-space interpolation is
+not behaviorally robust across reset distributions. A defensible superiority claim requires more
+tasks, more paired states, and a frozen validation/evaluation split.
 
 References: [SmolVLA](https://arxiv.org/abs/2506.01844),
 [LIBERO](https://arxiv.org/abs/2306.03310),

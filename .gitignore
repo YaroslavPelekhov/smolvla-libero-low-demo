@@ -1,9 +1,13 @@
 .venv/
+*.egg-info/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
-data/
-outputs/
-tmp/
-wandb/
+/data/
+/outputs/
+/tmp/
+/tmp_latex_accidental/
+/wandb/
+.DS_Store
+Thumbs.db

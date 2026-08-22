@@ -117,11 +117,19 @@ def _gpu_check() -> dict[str, Any]:
 def _protocol_check(cfg: dict[str, Any]) -> dict[str, Any]:
     manifest_path = resolve(cfg["paths"]["manifest"])
     prereg_path = resolve(cfg["paths"]["preregistration"])
-    predictions_path = resolve("predictions.yaml")
     if not manifest_path.exists() or not prereg_path.exists():
         return {"ok": False, "error": "manifest or preregistration is missing"}
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     preregistration = json.loads(prereg_path.read_text(encoding="utf-8"))
+    predictions_file = preregistration.get("predictions_file")
+    if not predictions_file:
+        return {"ok": False, "error": "preregistration has no predictions_file"}
+    predictions_path = resolve(predictions_file)
+    if not predictions_path.exists():
+        return {
+            "ok": False,
+            "error": f"registered predictions file is missing: {predictions_path}",
+        }
     prediction_sha = hashlib.sha256(predictions_path.read_bytes()).hexdigest()
     digest_ok = manifest.get("sha256") == manifest_digest(manifest)
     prereg_ok = preregistration.get("sha256") == prediction_sha
@@ -131,6 +139,7 @@ def _protocol_check(cfg: dict[str, Any]) -> dict[str, Any]:
         "manifest_digest_ok": digest_ok,
         "preregistration_sha256": preregistration.get("sha256"),
         "preregistration_digest_ok": prereg_ok,
+        "predictions_file": str(predictions_path),
         "seen_tasks": manifest.get("seen", {}).get("total_tasks"),
         "seen_episodes": manifest.get("seen", {}).get("total_episodes"),
         "target_task_ids": sorted(int(key) for key in manifest["target"]["tasks"]),
@@ -155,6 +164,7 @@ def _environment_check(cfg: dict[str, Any]) -> dict[str, Any]:
             "agentview_image": "image",
             "robot0_eye_in_hand_image": "wrist_image",
         },
+        gripper_action_mode="binary_01",
     )
     envs = env_cfg.create_envs(1, use_async_envs=False)
     env = envs[cfg["dataset"]["target_suite"]][task_id]
@@ -163,9 +173,9 @@ def _environment_check(cfg: dict[str, Any]) -> dict[str, Any]:
         prompt = env.unwrapped.envs[0].task_description
         manifest = json.loads(resolve(cfg["paths"]["manifest"]).read_text(encoding="utf-8"))
         manifest_prompt = manifest["target"]["tasks"][str(task_id)]["prompt"]
-        _, reward, terminated, truncated, info = env.step(
-            np.zeros((1, 7), dtype=np.float32)
-        )
+        dataset_noop = np.zeros((1, 7), dtype=np.float32)
+        dataset_noop[:, -1] = 1.0  # dataset convention: open; bridge maps this to native -1
+        _, reward, terminated, truncated, info = env.step(dataset_noop)
         pixels = observation["pixels"]
         return {
             "ok": prompt == manifest_prompt,
@@ -176,7 +186,15 @@ def _environment_check(cfg: dict[str, Any]) -> dict[str, Any]:
             "prompt_matches_manifest": prompt == manifest_prompt,
             "camera_keys": sorted(pixels),
             "camera_shapes": {key: list(value.shape) for key, value in pixels.items()},
-            "state_shape": list(observation["robot_state"]["eef"]["pos"].shape),
+            "state_components": {
+                "eef_pos": list(observation["robot_state"]["eef"]["pos"].shape),
+                "eef_quat": list(observation["robot_state"]["eef"]["quat"].shape),
+                "gripper_qpos": list(
+                    observation["robot_state"]["gripper"]["qpos"].shape
+                ),
+                "flattened_policy_state": [1, 8],
+            },
+            "gripper_action_mode": "binary_01 (1=open, 0=closed -> -1=open, +1=closed)",
             "step": {
                 "reward": reward.tolist(),
                 "terminated": terminated.tolist(),

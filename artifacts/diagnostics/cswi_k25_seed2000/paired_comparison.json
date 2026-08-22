@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "method": "stabilized",
+  "aggregate": [
+    {
+      "budget": 25,
+      "n": 120,
+      "baseline_successes": 116,
+      "method_successes": 116,
+      "delta_percentage_points": 0.0,
+      "wins": 4,
+      "losses": 4,
+      "mcnemar_exact_p": 1.0
+    }
+  ],
+  "per_task": [
+    {
+      "budget": 25,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 38,
+      "method_successes": 40,
+      "baseline_rate": 0.95,
+      "method_rate": 1.0
+    },
+    {
+      "budget": 25,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 39,
+      "method_successes": 36,
+      "baseline_rate": 0.975,
+      "method_rate": 0.9
+    },
+    {
+      "budget": 25,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 39,
+      "method_successes": 40,
+      "baseline_rate": 0.975,
+      "method_rate": 1.0
+    }
+  ]
+}

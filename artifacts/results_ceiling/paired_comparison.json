@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "method": "stabilized",
+  "aggregate": [
+    {
+      "budget": 1,
+      "n": 120,
+      "baseline_successes": 64,
+      "method_successes": 66,
+      "delta_percentage_points": 1.6666666666666667,
+      "wins": 8,
+      "losses": 6,
+      "mcnemar_exact_p": 0.79052734375
+    },
+    {
+      "budget": 2,
+      "n": 120,
+      "baseline_successes": 95,
+      "method_successes": 92,
+      "delta_percentage_points": -2.5,
+      "wins": 10,
+      "losses": 13,
+      "mcnemar_exact_p": 0.6776394844055176
+    },
+    {
+      "budget": 5,
+      "n": 120,
+      "baseline_successes": 118,
+      "method_successes": 115,
+      "delta_percentage_points": -2.5,
+      "wins": 1,
+      "losses": 4,
+      "mcnemar_exact_p": 0.375
+    },
+    {
+      "budget": 10,
+      "n": 120,
+      "baseline_successes": 115,
+      "method_successes": 111,
+      "delta_percentage_points": -3.3333333333333335,
+      "wins": 3,
+      "losses": 7,
+      "mcnemar_exact_p": 0.34375
+    },
+    {
+      "budget": 25,
+      "n": 120,
+      "baseline_successes": 111,
+      "method_successes": 110,
+      "delta_percentage_points": -0.8333333333333334,
+      "wins": 7,
+      "losses": 8,
+      "mcnemar_exact_p": 1.0
+    }
+  ],
+  "per_task": [
+    {
+      "budget": 1,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 0,
+      "method_successes": 0,
+      "baseline_rate": 0.0,
+      "method_rate": 0.0
+    },
+    {
+      "budget": 1,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 40,
+      "method_successes": 39,
+      "baseline_rate": 1.0,
+      "method_rate": 0.975
+    },
+    {
+      "budget": 1,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 24,
+      "method_successes": 27,
+      "baseline_rate": 0.6,
+      "method_rate": 0.675
+    },
+    {
+      "budget": 2,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 33,
+      "method_successes": 30,
+      "baseline_rate": 0.825,
+      "method_rate": 0.75
+    },
+    {
+      "budget": 2,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 40,
+      "method_successes": 39,
+      "baseline_rate": 1.0,
+      "method_rate": 0.975
+    },
+    {
+      "budget": 2,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 22,
+      "method_successes": 23,
+      "baseline_rate": 0.55,
+      "method_rate": 0.575
+    },
+    {
+      "budget": 5,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 40,
+      "method_successes": 37,
+      "baseline_rate": 1.0,
+      "method_rate": 0.925
+    },
+    {
+      "budget": 5,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 40,
+      "method_successes": 40,
+      "baseline_rate": 1.0,
+      "method_rate": 1.0
+    },
+    {
+      "budget": 5,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 38,
+      "method_successes": 38,
+      "baseline_rate": 0.95,
+      "method_rate": 0.95
+    },
+    {
+      "budget": 10,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 39,
+      "method_successes": 37,
+      "baseline_rate": 0.975,
+      "method_rate": 0.925
+    },
+    {
+      "budget": 10,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 40,
+      "method_successes": 39,
+      "baseline_rate": 1.0,
+      "method_rate": 0.975
+    },
+    {
+      "budget": 10,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 36,
+      "method_successes": 35,
+      "baseline_rate": 0.9,
+      "method_rate": 0.875
+    },
+    {
+      "budget": 25,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 38,
+      "method_successes": 38,
+      "baseline_rate": 0.95,
+      "method_rate": 0.95
+    },
+    {
+      "budget": 25,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 36,
+      "method_successes": 36,
+      "baseline_rate": 0.9,
+      "method_rate": 0.9
+    },
+    {
+      "budget": 25,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 37,
+      "method_successes": 36,
+      "baseline_rate": 0.925,
+      "method_rate": 0.9
+    }
+  ]
+}

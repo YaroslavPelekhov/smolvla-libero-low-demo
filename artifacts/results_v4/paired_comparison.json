@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "method": "task_vector",
+  "aggregate": [
+    {
+      "budget": 5,
+      "n": 120,
+      "baseline_successes": 114,
+      "method_successes": 115,
+      "delta_percentage_points": 0.8333333333333334,
+      "wins": 6,
+      "losses": 5,
+      "mcnemar_exact_p": 1.0
+    },
+    {
+      "budget": 10,
+      "n": 120,
+      "baseline_successes": 111,
+      "method_successes": 117,
+      "delta_percentage_points": 5.0,
+      "wins": 9,
+      "losses": 3,
+      "mcnemar_exact_p": 0.14599609375
+    },
+    {
+      "budget": 25,
+      "n": 120,
+      "baseline_successes": 116,
+      "method_successes": 111,
+      "delta_percentage_points": -4.166666666666667,
+      "wins": 3,
+      "losses": 8,
+      "mcnemar_exact_p": 0.2265625
+    }
+  ],
+  "per_task": [
+    {
+      "budget": 5,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 39,
+      "method_successes": 38,
+      "baseline_rate": 0.975,
+      "method_rate": 0.95
+    },
+    {
+      "budget": 5,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 40,
+      "method_successes": 40,
+      "baseline_rate": 1.0,
+      "method_rate": 1.0
+    },
+    {
+      "budget": 5,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 35,
+      "method_successes": 37,
+      "baseline_rate": 0.875,
+      "method_rate": 0.925
+    },
+    {
+      "budget": 10,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 38,
+      "method_successes": 39,
+      "baseline_rate": 0.95,
+      "method_rate": 0.975
+    },
+    {
+      "budget": 10,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 38,
+      "method_successes": 40,
+      "baseline_rate": 0.95,
+      "method_rate": 1.0
+    },
+    {
+      "budget": 10,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 35,
+      "method_successes": 38,
+      "baseline_rate": 0.875,
+      "method_rate": 0.95
+    },
+    {
+      "budget": 25,
+      "task_id": 0,
+      "n": 40,
+      "baseline_successes": 38,
+      "method_successes": 38,
+      "baseline_rate": 0.95,
+      "method_rate": 0.95
+    },
+    {
+      "budget": 25,
+      "task_id": 1,
+      "n": 40,
+      "baseline_successes": 39,
+      "method_successes": 36,
+      "baseline_rate": 0.975,
+      "method_rate": 0.9
+    },
+    {
+      "budget": 25,
+      "task_id": 2,
+      "n": 40,
+      "baseline_successes": 39,
+      "method_successes": 37,
+      "baseline_rate": 0.975,
+      "method_rate": 0.925
+    }
+  ]
+}

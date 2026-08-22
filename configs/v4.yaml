@@ -1,0 +1,45 @@
+# Independent confirmatory rerun for Cross-Seed Task-Vector Interpolation (CSTVI).
+dataset:
+  repo_id: nvidia/LIBERO_LeRobot_v3
+  revision: main
+  local_dir: data/LIBERO_LeRobot_v3
+  seen_suite: libero_90
+  target_suite: libero_goal
+  target_task_ids: [0, 1, 2]
+  target_prompts:
+    0: open the middle drawer of the cabinet
+    1: put the bowl on the stove
+    2: put the wine bottle on top of the cabinet
+
+model:
+  base: lerobot/smolvla_base
+  vlm_model_name: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+  load_vlm_weights: false
+  seen_steps: 100000
+  adaptation_steps: 10000
+  save_freq: 10000
+  batch_size: 8
+  num_workers: 4
+  mixed_precision: bf16
+  n_action_steps: 10
+
+protocol:
+  budgets: [5, 10, 25]
+  train_seeds: [17, 29]
+  eval_seed: 2000
+  eval_episodes: 20
+  eval_batch_size: 4
+  eval_async: false
+  strict_subset_stats: true
+  include_controls: false
+
+method:
+  name: cross_seed_task_vector_interpolation
+  stage: task_vector
+  partner_weight: 0.25
+
+paths:
+  manifest: artifacts/protocol_manifest.json
+  preregistration: artifacts/preregistration_v4.json
+  outputs: outputs/benchmark_v4_confirmatory
+  results: artifacts/results_v4

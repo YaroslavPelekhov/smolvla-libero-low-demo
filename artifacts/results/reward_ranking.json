@@ -1,7 +1,7 @@
 {
   "n_checkpoints": 42,
-  "small_spearman": 0.16268936914248,
-  "robometer_spearman": 0.2790528855331877,
+  "small_spearman": -0.32280596289423596,
+  "robometer_spearman": 0.2522699555780148,
   "records": [
     {
       "key": [
@@ -10,9 +10,9 @@
         0,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4890735805034637,
-      "robometer": 0.5186221957206726
+      "true_success": 0.9,
+      "small_critic": 0.48930737376213074,
+      "robometer": 0.6467437267303466
     },
     {
       "key": [
@@ -21,9 +21,9 @@
         0,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48842799067497256,
-      "robometer": 0.3342305958271027
+      "true_success": 0.95,
+      "small_critic": 0.4891781687736511,
+      "robometer": 0.6546341061592102
     },
     {
       "key": [
@@ -32,9 +32,9 @@
         1,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4885190427303314,
-      "robometer": 0.20333135724067689
+      "true_success": 1.0,
+      "small_critic": 0.4884990930557251,
+      "robometer": 0.5506009578704834
     },
     {
       "key": [
@@ -43,9 +43,9 @@
         1,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48847070932388303,
-      "robometer": 0.20160087943077087
+      "true_success": 1.0,
+      "small_critic": 0.4885235965251923,
+      "robometer": 0.5689684391021729
     },
     {
       "key": [
@@ -54,9 +54,9 @@
         2,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4912592828273773,
-      "robometer": 0.46061463952064513
+      "true_success": 0.85,
+      "small_critic": 0.4885490655899048,
+      "robometer": 0.5701375544071198
     },
     {
       "key": [
@@ -65,9 +65,9 @@
         2,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4908733665943146,
-      "robometer": 0.4226903200149536
+      "true_success": 0.8,
+      "small_critic": 0.48835861682891846,
+      "robometer": 0.648369824886322
     },
     {
       "key": [
@@ -76,9 +76,9 @@
         0,
         17
       ],
-      "true_success": 0.25,
-      "small_critic": 0.4891699254512787,
-      "robometer": 0.6409707903862
+      "true_success": 0.95,
+      "small_critic": 0.48916041254997256,
+      "robometer": 0.6703205823898315
     },
     {
       "key": [
@@ -87,9 +87,9 @@
         0,
         29
       ],
-      "true_success": 0.15,
-      "small_critic": 0.49047333002090454,
-      "robometer": 0.4434637904167175
+      "true_success": 1.0,
+      "small_critic": 0.4892459511756897,
+      "robometer": 0.6714261651039124
     },
     {
       "key": [
@@ -98,9 +98,9 @@
         1,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48830378651618955,
-      "robometer": 0.22530294060707093
+      "true_success": 1.0,
+      "small_critic": 0.4885700762271881,
+      "robometer": 0.5793516039848328
     },
     {
       "key": [
@@ -109,9 +109,9 @@
         1,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48816193342208863,
-      "robometer": 0.2101978540420532
+      "true_success": 1.0,
+      "small_critic": 0.4885122776031494,
+      "robometer": 0.5746595382690429
     },
     {
       "key": [
@@ -120,9 +120,9 @@
         2,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48989157676696776,
-      "robometer": 0.38338903784751893
+      "true_success": 0.95,
+      "small_critic": 0.4882913947105408,
+      "robometer": 0.6241836190223694
     },
     {
       "key": [
@@ -131,9 +131,9 @@
         2,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.49051620364189147,
-      "robometer": 0.4105446994304657
+      "true_success": 0.8,
+      "small_critic": 0.4883839190006256,
+      "robometer": 0.5506124377250672
     },
     {
       "key": [
@@ -142,9 +142,9 @@
         0,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4893238306045532,
-      "robometer": 0.4031873047351837
+      "true_success": 0.85,
+      "small_critic": 0.48917317390441895,
+      "robometer": 0.6050310075283051
     },
     {
       "key": [
@@ -153,9 +153,9 @@
         0,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48980677127838135,
-      "robometer": 0.4124335885047913
+      "true_success": 1.0,
+      "small_critic": 0.48899962902069094,
+      "robometer": 0.6727254509925842
     },
     {
       "key": [
@@ -164,9 +164,9 @@
         1,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.488510262966156,
-      "robometer": 0.21657280027866363
+      "true_success": 1.0,
+      "small_critic": 0.4885241389274597,
+      "robometer": 0.5891905188560486
     },
     {
       "key": [
@@ -175,9 +175,9 @@
         1,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4884021580219269,
-      "robometer": 0.2073221355676651
+      "true_success": 1.0,
+      "small_critic": 0.4884939193725586,
+      "robometer": 0.5720867276191711
     },
     {
       "key": [
@@ -186,9 +186,9 @@
         2,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48965664505958556,
-      "robometer": 0.3595183491706848
+      "true_success": 0.95,
+      "small_critic": 0.488348126411438,
+      "robometer": 0.6596959471702576
     },
     {
       "key": [
@@ -197,9 +197,9 @@
         2,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.490755957365036,
-      "robometer": 0.4108095407485962
+      "true_success": 0.9,
+      "small_critic": 0.48827692270278933,
+      "robometer": 0.6282975912094116
     },
     {
       "key": [
@@ -209,8 +209,8 @@
         17
       ],
       "true_success": 0.0,
-      "small_critic": 0.489546799659729,
-      "robometer": 0.5285497426986694
+      "small_critic": 0.4892550468444824,
+      "robometer": 0.4185321509838104
     },
     {
       "key": [
@@ -220,8 +220,8 @@
         29
       ],
       "true_success": 0.0,
-      "small_critic": 0.48951412439346315,
-      "robometer": 0.5139651298522949
+      "small_critic": 0.4891088783740997,
+      "robometer": 0.37483704686164854
     },
     {
       "key": [
@@ -231,8 +231,8 @@
         17
       ],
       "true_success": 0.0,
-      "small_critic": 0.4884487509727478,
-      "robometer": 0.2921282410621643
+      "small_critic": 0.4890278995037079,
+      "robometer": 0.3884314179420471
     },
     {
       "key": [
@@ -242,8 +242,8 @@
         29
       ],
       "true_success": 0.0,
-      "small_critic": 0.48830928802490237,
-      "robometer": 0.2892451882362366
+      "small_critic": 0.4892554819583893,
+      "robometer": 0.39091665148735044
     },
     {
       "key": [
@@ -253,8 +253,8 @@
         17
       ],
       "true_success": 0.0,
-      "small_critic": 0.489899617433548,
-      "robometer": 0.4298450767993927
+      "small_critic": 0.48951738476753237,
+      "robometer": 0.40302844643592833
     },
     {
       "key": [
@@ -264,8 +264,8 @@
         29
       ],
       "true_success": 0.0,
-      "small_critic": 0.490175461769104,
-      "robometer": 0.43211819529533385
+      "small_critic": 0.4895695984363556,
+      "robometer": 0.42222888469696046
     },
     {
       "key": [
@@ -274,9 +274,9 @@
         0,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48932530283927916,
-      "robometer": 0.5746671259403229
+      "true_success": 0.65,
+      "small_critic": 0.489335709810257,
+      "robometer": 0.661143684387207
     },
     {
       "key": [
@@ -285,9 +285,9 @@
         0,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4893133878707886,
-      "robometer": 0.6280100226402283
+      "true_success": 0.45,
+      "small_critic": 0.4895769476890564,
+      "robometer": 0.6430948853492737
     },
     {
       "key": [
@@ -296,9 +296,9 @@
         1,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.488166743516922,
-      "robometer": 0.28173390626907346
+      "true_success": 1.0,
+      "small_critic": 0.48857035040855407,
+      "robometer": 0.5772376656532288
     },
     {
       "key": [
@@ -307,9 +307,9 @@
         1,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.488326233625412,
-      "robometer": 0.2372952252626419
+      "true_success": 1.0,
+      "small_critic": 0.48868518471717837,
+      "robometer": 0.5894451856613159
     },
     {
       "key": [
@@ -318,9 +318,9 @@
         2,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48866318464279174,
-      "robometer": 0.3401270866394043
+      "true_success": 0.85,
+      "small_critic": 0.48840209245681765,
+      "robometer": 0.6612833738327026
     },
     {
       "key": [
@@ -329,9 +329,9 @@
         2,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4885423481464386,
-      "robometer": 0.3370776653289795
+      "true_success": 0.8,
+      "small_critic": 0.4882870018482208,
+      "robometer": 0.6263121247291565
     },
     {
       "key": [
@@ -340,9 +340,9 @@
         0,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.48931469321250914,
-      "robometer": 0.5513556480407715
+      "true_success": 0.9,
+      "small_critic": 0.48923290967941285,
+      "robometer": 0.6580614805221557
     },
     {
       "key": [
@@ -351,9 +351,9 @@
         0,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4893588423728943,
-      "robometer": 0.6284371018409729
+      "true_success": 0.85,
+      "small_critic": 0.48944804072380066,
+      "robometer": 0.660169529914856
     },
     {
       "key": [
@@ -362,9 +362,9 @@
         1,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4881241679191589,
-      "robometer": 0.2923685610294342
+      "true_success": 1.0,
+      "small_critic": 0.4885995090007782,
+      "robometer": 0.5851482033729554
     },
     {
       "key": [
@@ -373,9 +373,9 @@
         1,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4882128417491913,
-      "robometer": 0.26972703337669374
+      "true_success": 1.0,
+      "small_critic": 0.4885419726371765,
+      "robometer": 0.5423946678638458
     },
     {
       "key": [
@@ -384,9 +384,9 @@
         2,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4883407235145569,
-      "robometer": 0.319653183221817
+      "true_success": 0.9,
+      "small_critic": 0.4884368240833282,
+      "robometer": 0.6446815490722656
     },
     {
       "key": [
@@ -395,9 +395,9 @@
         2,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4882043063640594,
-      "robometer": 0.3146558403968811
+      "true_success": 0.7,
+      "small_critic": 0.4884484946727753,
+      "robometer": 0.458853480219841
     },
     {
       "key": [
@@ -406,9 +406,9 @@
         0,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4892980694770813,
-      "robometer": 0.5978058695793151
+      "true_success": 0.9,
+      "small_critic": 0.4891551613807678,
+      "robometer": 0.6547743201255798
     },
     {
       "key": [
@@ -417,9 +417,9 @@
         0,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4894020199775696,
-      "robometer": 0.6348486423492432
+      "true_success": 0.95,
+      "small_critic": 0.4895031571388245,
+      "robometer": 0.6546331763267517
     },
     {
       "key": [
@@ -428,9 +428,9 @@
         1,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4881253182888031,
-      "robometer": 0.28484979271888733
+      "true_success": 0.95,
+      "small_critic": 0.4886107683181763,
+      "robometer": 0.5263232052326202
     },
     {
       "key": [
@@ -439,9 +439,9 @@
         1,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4881738483905792,
-      "robometer": 0.27789626717567445
+      "true_success": 1.0,
+      "small_critic": 0.4885204195976257,
+      "robometer": 0.5740869522094727
     },
     {
       "key": [
@@ -450,9 +450,9 @@
         2,
         17
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4883612096309662,
-      "robometer": 0.3230586647987366
+      "true_success": 1.0,
+      "small_critic": 0.4882541298866272,
+      "robometer": 0.6230637788772583
     },
     {
       "key": [
@@ -461,9 +461,9 @@
         2,
         29
       ],
-      "true_success": 0.0,
-      "small_critic": 0.4882739007472992,
-      "robometer": 0.3169064521789551
+      "true_success": 0.9,
+      "small_critic": 0.48834229111671446,
+      "robometer": 0.5252722769975662
     }
   ],
   "policy_optimization_warning": "Neither critic is safe as a direct policy objective without held-out human/simulator audits; temporal shortcuts and terminal-state poses are exploitable."

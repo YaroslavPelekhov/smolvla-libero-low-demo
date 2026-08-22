@@ -17,10 +17,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.48864874243736267,
-    "true_success_rate": 0.25,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.48936399817466736,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -40,10 +41,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.48841843008995056,
-    "true_success_rate": 0.25,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.48879513144493103,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -63,10 +65,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.4890737533569336,
-    "true_success_rate": 0.25,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.48933494091033936,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -86,10 +89,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.4902137815952301,
-    "true_success_rate": 0.25,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.48908570408821106,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -109,10 +113,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.4894949197769165,
-    "true_success_rate": 0.25,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.48922228813171387,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -132,10 +137,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.4904375970363617,
-    "true_success_rate": 0.15,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.489359050989151,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -155,10 +161,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.4905984401702881,
-    "true_success_rate": 0.15,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.4889521598815918,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -178,10 +185,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.4900919497013092,
-    "true_success_rate": 0.15,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.489401251077652,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -201,10 +209,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.4904828369617462,
-    "true_success_rate": 0.15,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.4890466630458832,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -224,10 +233,11 @@
       94,
       111
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.4907558262348175,
-    "true_success_rate": 0.15,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.48947063088417053,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -247,10 +257,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.48811519145965576,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
+    "critic_score": 0.4884646534919739,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -270,10 +281,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.48837724328041077,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
+    "critic_score": 0.48852846026420593,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -293,10 +305,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.4884084463119507,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
+    "critic_score": 0.4885352849960327,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -316,10 +329,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.48830530047416687,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
+    "critic_score": 0.48859143257141113,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -339,10 +353,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.4883127510547638,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
+    "critic_score": 0.4887305498123169,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -362,10 +377,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.4881173372268677,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
+    "critic_score": 0.48839470744132996,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -385,10 +401,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.48804497718811035,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
+    "critic_score": 0.48848578333854675,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -408,10 +425,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.48815417289733887,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
+    "critic_score": 0.48854658007621765,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -431,10 +449,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.48823174834251404,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
+    "critic_score": 0.48856937885284424,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -454,10 +473,11 @@
       116,
       121
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.4882614314556122,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
+    "critic_score": 0.48856493830680847,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -477,10 +497,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.48997554183006287,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
+    "critic_score": 0.4883613586425781,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -500,10 +521,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.4900035858154297,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
+    "critic_score": 0.4881020486354828,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -523,10 +545,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.4902891218662262,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
+    "critic_score": 0.48814088106155396,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -546,10 +569,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.4895378649234772,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
+    "critic_score": 0.4883624017238617,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -569,10 +593,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.48965176939964294,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
+    "critic_score": 0.4884902834892273,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -592,10 +617,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.49071457982063293,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
+    "critic_score": 0.4885234534740448,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -615,10 +641,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.4905129671096802,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
+    "critic_score": 0.4881711006164551,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -638,10 +665,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.4905797243118286,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
+    "critic_score": 0.488188773393631,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -661,10 +689,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.4901929199695587,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+    "critic_score": 0.48836183547973633,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -684,10 +713,11 @@
       48,
       51
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.49058082699775696,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
+    "critic_score": 0.48867443203926086,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -722,10 +752,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.48933061957359314,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.4888969957828522,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -760,10 +791,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.4896272122859955,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.4891493320465088,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -798,10 +830,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.48889991641044617,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.48920607566833496,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -836,10 +869,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.48947641253471375,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.48928746581077576,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -874,10 +908,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.4892849922180176,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.48932600021362305,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -912,10 +947,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.4900464117527008,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.4889676570892334,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -950,10 +986,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.4898715317249298,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.48874232172966003,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -988,10 +1025,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.489569753408432,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.4891010820865631,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -1026,10 +1064,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.48972973227500916,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.4891948699951172,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -1064,10 +1103,11 @@
       232,
       252
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.48981642723083496,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.48899221420288086,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -1102,10 +1142,11 @@
       239,
       250
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.48841068148612976,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
+    "critic_score": 0.4883602261543274,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "baseline",
@@ -1140,10 +1181,11 @@
       239,
       250
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 2,
-    "critic_score": 0.48834875226020813,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
+    "critic_score": 0.48852983117103577,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "baseline",
@@ -1178,10 +1220,11 @@
       239,
       250
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 4,
-    "critic_score": 0.4885007441043854,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
+    "critic_score": 0.48859870433807373,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "baseline",
@@ -1216,10 +1259,11 @@
       239,
       250
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 7,
-    "critic_score": 0.48867547512054443,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
+    "critic_score": 0.48860421776771545,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "baseline",
@@ -1254,10 +1298,11 @@
       239,
       250
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 9,
-    "critic_score": 0.48861566185951233,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
+    "critic_score": 0.48852771520614624,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "baseline",
@@ -1292,1749 +1337,1727 @@
       239,
       250
     ],
+    "normalization_scope": "selected_target",
     "episode_index": 0,
-    "critic_score": 0.48825204372406006,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121,
-      145,
-      151,
-      165,
-      166,
-      171,
-      178,
-      179,
-      186,
-      201,
-      219,
-      225,
-      233,
-      237,
-      239,
-      250
-    ],
-    "episode_index": 2,
-    "critic_score": 0.48832404613494873,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121,
-      145,
-      151,
-      165,
-      166,
-      171,
-      178,
-      179,
-      186,
-      201,
-      219,
-      225,
-      233,
-      237,
-      239,
-      250
-    ],
-    "episode_index": 4,
-    "critic_score": 0.48839130997657776,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121,
-      145,
-      151,
-      165,
-      166,
-      171,
-      178,
-      179,
-      186,
-      201,
-      219,
-      225,
-      233,
-      237,
-      239,
-      250
-    ],
-    "episode_index": 7,
-    "critic_score": 0.48846983909606934,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121,
-      145,
-      151,
-      165,
-      166,
-      171,
-      178,
-      179,
-      186,
-      201,
-      219,
-      225,
-      233,
-      237,
-      239,
-      250
-    ],
-    "episode_index": 9,
-    "critic_score": 0.4885735511779785,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 0,
-    "critic_score": 0.4900614321231842,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4897126853466034,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 4,
-    "critic_score": 0.49011874198913574,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 7,
-    "critic_score": 0.4890499413013458,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 9,
-    "critic_score": 0.4893404245376587,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 0,
-    "critic_score": 0.49131548404693604,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4905751049518585,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 4,
-    "critic_score": 0.491187185049057,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 7,
-    "critic_score": 0.49037155508995056,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 25,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51,
-      53,
-      57,
-      75,
-      89,
-      91,
-      96,
-      97,
-      100,
-      101,
-      103,
-      133,
-      136,
-      149,
-      154,
-      164
-    ],
-    "episode_index": 9,
-    "critic_score": 0.49033045768737793,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 0,
-    "critic_score": 0.48837199807167053,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 2,
-    "critic_score": 0.48925626277923584,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 4,
-    "critic_score": 0.48883679509162903,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 7,
-    "critic_score": 0.4895184338092804,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 9,
-    "critic_score": 0.48938441276550293,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 0,
-    "critic_score": 0.487900048494339,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4894079267978668,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 4,
-    "critic_score": 0.4884030520915985,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 7,
-    "critic_score": 0.488255113363266,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58
-    ],
-    "episode_index": 9,
-    "critic_score": 0.48817381262779236,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 0,
-    "critic_score": 0.4884219467639923,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4884885847568512,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 4,
-    "critic_score": 0.4885009825229645,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 7,
-    "critic_score": 0.4885871708393097,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 9,
-    "critic_score": 0.48859652876853943,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 0,
-    "critic_score": 0.48838281631469727,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 2,
-    "critic_score": 0.488421767950058,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 4,
-    "critic_score": 0.48836395144462585,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 7,
-    "critic_score": 0.48864778876304626,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36
-    ],
-    "episode_index": 9,
-    "critic_score": 0.4885372221469879,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 0,
-    "critic_score": 0.49160540103912354,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4909921884536743,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 4,
-    "critic_score": 0.4915871322154999,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 7,
-    "critic_score": 0.49100247025489807,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 9,
-    "critic_score": 0.4911092221736908,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 0,
-    "critic_score": 0.4912991523742676,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4906405508518219,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 4,
-    "critic_score": 0.49130240082740784,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 7,
-    "critic_score": 0.49044108390808105,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
-  },
-  {
-    "stage": "baseline",
-    "method": "baseline",
-    "budget": 5,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25
-    ],
-    "episode_index": 9,
-    "critic_score": 0.4906836450099945,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 0,
-    "critic_score": 0.488290399312973,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4891261160373688,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 4,
-    "critic_score": 0.4892096221446991,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 7,
-    "critic_score": 0.4900790750980377,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 17,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 9,
-    "critic_score": 0.48986825346946716,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 0,
-    "critic_score": 0.48936423659324646,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 2,
-    "critic_score": 0.48935189843177795,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 4,
-    "critic_score": 0.48908236622810364,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 7,
-    "critic_score": 0.4893776476383209,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 0,
-    "seed": 29,
-    "episodes": [
-      20,
-      26,
-      31,
-      42,
-      58,
-      64,
-      84,
-      90,
-      94,
-      111
-    ],
-    "episode_index": 9,
-    "critic_score": 0.48961806297302246,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 0,
-    "critic_score": 0.48795533180236816,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 2,
-    "critic_score": 0.48813894391059875,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 4,
-    "critic_score": 0.4881211519241333,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 7,
-    "critic_score": 0.4881681501865387,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 9,
-    "critic_score": 0.48823726177215576,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 0,
-    "critic_score": 0.4880187511444092,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 2,
-    "critic_score": 0.4882730543613434,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 4,
-    "critic_score": 0.48828259110450745,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 7,
-    "critic_score": 0.4883151054382324,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 1,
-    "seed": 29,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
-    "episode_index": 9,
-    "critic_score": 0.488174706697464,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 0,
-    "critic_score": 0.4884301722049713,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 2,
-    "critic_score": 0.48871102929115295,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 4,
-    "critic_score": 0.48796772956848145,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 7,
-    "critic_score": 0.48861661553382874,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 17,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 9,
-    "critic_score": 0.48797807097435,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 0,
-    "critic_score": 0.48846280574798584,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 2,
-    "critic_score": 0.48856422305107117,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 4,
-    "critic_score": 0.48794448375701904,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
-  },
-  {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
-    "task_id": 2,
-    "seed": 29,
-    "episodes": [
-      6,
-      10,
-      17,
-      18,
-      25,
-      38,
-      40,
-      44,
-      48,
-      51
-    ],
-    "episode_index": 7,
     "critic_score": 0.4882999360561371,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121,
+      145,
+      151,
+      165,
+      166,
+      171,
+      178,
+      179,
+      186,
+      201,
+      219,
+      225,
+      233,
+      237,
+      239,
+      250
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.4885041117668152,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121,
+      145,
+      151,
+      165,
+      166,
+      171,
+      178,
+      179,
+      186,
+      201,
+      219,
+      225,
+      233,
+      237,
+      239,
+      250
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.48845767974853516,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121,
+      145,
+      151,
+      165,
+      166,
+      171,
+      178,
+      179,
+      186,
+      201,
+      219,
+      225,
+      233,
+      237,
+      239,
+      250
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4885770380496979,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121,
+      145,
+      151,
+      165,
+      166,
+      171,
+      178,
+      179,
+      186,
+      201,
+      219,
+      225,
+      233,
+      237,
+      239,
+      250
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.48863083124160767,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.4884380102157593,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.4880309998989105,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.4882388114929199,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4883279502391815,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.4887048602104187,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.4885716140270233,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.48803064227104187,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.48810359835624695,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4884476065635681,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 25,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51,
+      53,
+      57,
+      75,
+      89,
+      91,
+      96,
+      97,
+      100,
+      101,
+      103,
+      133,
+      136,
+      149,
+      154,
+      164
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.4882311522960663,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.48899197578430176,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.4898691773414612,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.489067941904068,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4891830384731293,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.4894247353076935,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.4892638921737671,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.4887891411781311,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.48940742015838623,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.48933303356170654,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.48909735679626465,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.4883388876914978,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.48849403858184814,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.48853397369384766,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4885120093822479,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.48861655592918396,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.488303542137146,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.4885362982749939,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.4885201156139374,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4885826110839844,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.48867541551589966,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.4884805381298065,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.4882184565067291,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.4881918430328369,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4884539246559143,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.48940056562423706,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 0,
+    "critic_score": 0.4884839653968811,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 2,
+    "critic_score": 0.48827582597732544,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 4,
+    "critic_score": 0.4880727529525757,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 7,
+    "critic_score": 0.4885141849517822,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+  },
+  {
+    "stage": "baseline",
+    "method": "baseline",
+    "budget": 5,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25
+    ],
+    "normalization_scope": "selected_target",
+    "episode_index": 9,
+    "critic_score": 0.48844635486602783,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/baseline/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 0,
+    "critic_score": 0.4890725612640381,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 2,
+    "critic_score": 0.4898046553134918,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 4,
+    "critic_score": 0.4890783727169037,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 7,
+    "critic_score": 0.4891718327999115,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 17,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 9,
+    "critic_score": 0.4890371263027191,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 0,
+    "critic_score": 0.4889353811740875,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 2,
+    "critic_score": 0.48988303542137146,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 4,
+    "critic_score": 0.4894239008426666,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 7,
+    "critic_score": 0.48912376165390015,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 0,
+    "seed": 29,
+    "episodes": [
+      20,
+      26,
+      31,
+      42,
+      58,
+      64,
+      84,
+      90,
+      94,
+      111
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 9,
+    "critic_score": 0.48987412452697754,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 0,
+    "critic_score": 0.48834335803985596,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 2,
+    "critic_score": 0.4885324239730835,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 4,
+    "critic_score": 0.48881059885025024,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 7,
+    "critic_score": 0.48851415514945984,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 17,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 9,
+    "critic_score": 0.48879700899124146,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 0,
+    "critic_score": 0.4884124994277954,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 2,
+    "critic_score": 0.48855337500572205,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 4,
+    "critic_score": 0.48856839537620544,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 7,
+    "critic_score": 0.48853200674057007,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 1,
+    "seed": 29,
+    "episodes": [
+      13,
+      15,
+      16,
+      22,
+      36,
+      45,
+      66,
+      76,
+      116,
+      121
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 9,
+    "critic_score": 0.4886435866355896,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 0,
+    "critic_score": 0.4885401725769043,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 2,
+    "critic_score": 0.48834824562072754,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 4,
+    "critic_score": 0.48831111192703247,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 7,
+    "critic_score": 0.4883892238140106,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 17,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 9,
+    "critic_score": 0.4885953664779663,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -3054,10 +3077,107 @@
       48,
       51
     ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 0,
+    "critic_score": 0.48847174644470215,
+    "true_success_rate": 0.7,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 2,
+    "critic_score": 0.4882146120071411,
+    "true_success_rate": 0.7,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 4,
+    "critic_score": 0.48803114891052246,
+    "true_success_rate": 0.7,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
+    "episode_index": 7,
+    "critic_score": 0.48873376846313477,
+    "true_success_rate": 0.7,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+  },
+  {
+    "stage": "method",
+    "method": "method",
+    "budget": 10,
+    "task_id": 2,
+    "seed": 29,
+    "episodes": [
+      6,
+      10,
+      17,
+      18,
+      25,
+      38,
+      40,
+      44,
+      48,
+      51
+    ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.4877500832080841,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
+    "critic_score": 0.48879119753837585,
+    "true_success_rate": 0.7,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-10/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -3092,10 +3212,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.48859116435050964,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.48909294605255127,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -3130,10 +3251,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.48903027176856995,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.48897239565849304,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -3168,10 +3290,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.4891080856323242,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.4894660711288452,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -3206,10 +3329,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.48993048071861267,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.48918652534484863,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -3244,10 +3368,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.48983034491539,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.48905786871910095,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -3282,10 +3407,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.4895426034927368,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.4893453121185303,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -3320,10 +3446,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.4891137182712555,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.4906836450099945,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -3358,10 +3485,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.48898816108703613,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.48916134238243103,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -3396,10 +3524,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.4898529052734375,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.4892294108867645,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -3434,10 +3563,11 @@
       232,
       252
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.48951271176338196,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.489096075296402,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -3472,10 +3602,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.4879266321659088,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
+    "critic_score": 0.48834437131881714,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -3510,10 +3641,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.4881516695022583,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
+    "critic_score": 0.4886895418167114,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -3548,10 +3680,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.4882339537143707,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
+    "critic_score": 0.48864755034446716,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -3586,10 +3719,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.48813822865486145,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
+    "critic_score": 0.4886404573917389,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -3624,10 +3758,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.4881761074066162,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
+    "critic_score": 0.48873192071914673,
+    "true_success_rate": 0.95,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -3662,10 +3797,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.48799440264701843,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
+    "critic_score": 0.48834919929504395,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -3700,10 +3836,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.48827505111694336,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
+    "critic_score": 0.48850584030151367,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -3738,10 +3875,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.4882950484752655,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
+    "critic_score": 0.4884938597679138,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -3776,10 +3914,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.488193154335022,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
+    "critic_score": 0.4886521100997925,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -3814,10 +3953,11 @@
       239,
       250
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.48811158537864685,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
+    "critic_score": 0.48860108852386475,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -3852,10 +3992,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.4886672794818878,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
+    "critic_score": 0.48818325996398926,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -3890,10 +4031,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.4886206388473511,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
+    "critic_score": 0.48804712295532227,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -3928,10 +4070,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.48808208107948303,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
+    "critic_score": 0.4880408048629761,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -3966,10 +4109,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.48839738965034485,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
+    "critic_score": 0.48836997151374817,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4004,10 +4148,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.48803865909576416,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
+    "critic_score": 0.4886294901371002,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -4042,10 +4187,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.48878398537635803,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
+    "critic_score": 0.4884148836135864,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -4080,10 +4226,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.4884570837020874,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
+    "critic_score": 0.487979918718338,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -4118,10 +4265,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.4881320297718048,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
+    "critic_score": 0.48816347122192383,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -4156,10 +4304,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.4881613254547119,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+    "critic_score": 0.48873478174209595,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4194,10 +4343,11 @@
       154,
       164
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.4878350794315338,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
+    "critic_score": 0.4884184002876282,
+    "true_success_rate": 0.9,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -4212,10 +4362,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.4877336323261261,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.4899250864982605,
+    "true_success_rate": 0.65,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -4230,10 +4381,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.48922064900398254,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.4888995587825775,
+    "true_success_rate": 0.65,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -4248,10 +4400,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.48958155512809753,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.4895191490650177,
+    "true_success_rate": 0.65,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -4266,10 +4419,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.4899229109287262,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.48904991149902344,
+    "true_success_rate": 0.65,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4284,10 +4438,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.4901677668094635,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.48928484320640564,
+    "true_success_rate": 0.65,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -4302,10 +4457,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.48957309126853943,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
+    "critic_score": 0.4889014661312103,
+    "true_success_rate": 0.45,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -4320,10 +4476,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.4890762269496918,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
+    "critic_score": 0.4890817105770111,
+    "true_success_rate": 0.45,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -4338,10 +4495,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.4891379773616791,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
+    "critic_score": 0.48967379331588745,
+    "true_success_rate": 0.45,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -4356,10 +4514,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.48924657702445984,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
+    "critic_score": 0.48893406987190247,
+    "true_success_rate": 0.45,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4374,10 +4533,11 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.48953306674957275,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
+    "critic_score": 0.49129369854927063,
+    "true_success_rate": 0.45,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -4392,10 +4552,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.48791298270225525,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
+    "critic_score": 0.48841047286987305,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -4410,10 +4571,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.488160103559494,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
+    "critic_score": 0.4885239601135254,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -4428,10 +4590,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.48816168308258057,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
+    "critic_score": 0.4886443316936493,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -4446,10 +4609,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.4882465600967407,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
+    "critic_score": 0.4884428381919861,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4464,10 +4628,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.48835238814353943,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
+    "critic_score": 0.4888301491737366,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -4482,10 +4647,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.48806238174438477,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
+    "critic_score": 0.48847630620002747,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -4500,10 +4666,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.4883135259151459,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
+    "critic_score": 0.4886170029640198,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -4518,10 +4685,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.48829030990600586,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
+    "critic_score": 0.4887775778770447,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -4536,10 +4704,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.4884158670902252,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
+    "critic_score": 0.48882797360420227,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4554,10 +4723,11 @@
       22,
       36
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.4885490834712982,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
+    "critic_score": 0.48872706294059753,
+    "true_success_rate": 1.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -4572,10 +4742,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.48887133598327637,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
+    "critic_score": 0.4884061813354492,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -4590,10 +4761,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.48923540115356445,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
+    "critic_score": 0.48824697732925415,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -4608,10 +4780,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.4882490932941437,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
+    "critic_score": 0.4883480668067932,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -4626,10 +4799,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.48885464668273926,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
+    "critic_score": 0.48856157064437866,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4644,10 +4818,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.488105446100235,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
+    "critic_score": 0.4884476661682129,
+    "true_success_rate": 0.85,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "method",
@@ -4662,10 +4837,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "critic_score": 0.4885459244251251,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
+    "critic_score": 0.4882614314556122,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "method",
@@ -4680,10 +4856,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 2,
-    "critic_score": 0.4893423020839691,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
+    "critic_score": 0.48822343349456787,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "method",
@@ -4698,10 +4875,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 4,
-    "critic_score": 0.4881227910518646,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
+    "critic_score": 0.4880502223968506,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "method",
@@ -4716,10 +4894,11 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 7,
-    "critic_score": 0.48887720704078674,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+    "critic_score": 0.4884040653705597,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "method",
@@ -4734,131 +4913,132 @@
       18,
       25
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 9,
-    "critic_score": 0.4878235161304474,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
+    "critic_score": 0.4884958565235138,
+    "true_success_rate": 0.8,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "zero",
     "method": "correct",
     "budget": 0,
     "task_id": 0,
-    "seed": 17,
-    "episode_index": 0,
-    "critic_score": 0.48951688408851624,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 17,
-    "episode_index": 2,
-    "critic_score": 0.48920753598213196,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 17,
-    "episode_index": 4,
-    "critic_score": 0.48954758048057556,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 17,
-    "episode_index": 7,
-    "critic_score": 0.4898613393306732,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 17,
-    "episode_index": 9,
-    "critic_score": 0.48960065841674805,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 29,
-    "episode_index": 0,
-    "critic_score": 0.4892137944698334,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 29,
-    "episode_index": 2,
-    "critic_score": 0.4894730746746063,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 29,
-    "episode_index": 4,
-    "critic_score": 0.4893171489238739,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 29,
-    "episode_index": 7,
-    "critic_score": 0.48982587456703186,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 0,
-    "seed": 29,
-    "episode_index": 9,
-    "critic_score": 0.4897407293319702,
-    "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
-  },
-  {
-    "stage": "zero",
-    "method": "correct",
-    "budget": 0,
-    "task_id": 1,
     "seed": 17,
     "episode_index": 0,
-    "critic_score": 0.48828592896461487,
+    "critic_score": 0.488995760679245,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 17,
+    "episode_index": 2,
+    "critic_score": 0.4890589118003845,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_2.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 17,
+    "episode_index": 4,
+    "critic_score": 0.4890691339969635,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_4.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 17,
+    "episode_index": 7,
+    "critic_score": 0.48966875672340393,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_7.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 17,
+    "episode_index": 9,
+    "critic_score": 0.48948267102241516,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-17/videos/libero_goal_0/eval_episode_9.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 29,
+    "episode_index": 0,
+    "critic_score": 0.48901113867759705,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_0.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 29,
+    "episode_index": 2,
+    "critic_score": 0.48906296491622925,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_2.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 29,
+    "episode_index": 4,
+    "critic_score": 0.48907938599586487,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_4.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 29,
+    "episode_index": 7,
+    "critic_score": 0.48921146988868713,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_7.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 0,
+    "seed": 29,
+    "episode_index": 9,
+    "critic_score": 0.48917943239212036,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-0/seed-29/videos/libero_goal_0/eval_episode_9.mp4"
+  },
+  {
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
+    "task_id": 1,
+    "seed": 17,
+    "episode_index": 0,
+    "critic_score": 0.48912620544433594,
+    "true_success_rate": 0.0,
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "zero",
@@ -4867,9 +5047,9 @@
     "task_id": 1,
     "seed": 17,
     "episode_index": 2,
-    "critic_score": 0.4885396957397461,
+    "critic_score": 0.4891059100627899,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "zero",
@@ -4878,9 +5058,9 @@
     "task_id": 1,
     "seed": 17,
     "episode_index": 4,
-    "critic_score": 0.4883458614349365,
+    "critic_score": 0.4891347885131836,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "zero",
@@ -4889,9 +5069,9 @@
     "task_id": 1,
     "seed": 17,
     "episode_index": 7,
-    "critic_score": 0.48855987191200256,
+    "critic_score": 0.4893011450767517,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "zero",
@@ -4900,9 +5080,9 @@
     "task_id": 1,
     "seed": 17,
     "episode_index": 9,
-    "critic_score": 0.48851239681243896,
+    "critic_score": 0.48847144842147827,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "zero",
@@ -4911,9 +5091,9 @@
     "task_id": 1,
     "seed": 29,
     "episode_index": 0,
-    "critic_score": 0.48858416080474854,
+    "critic_score": 0.48896560072898865,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_0.mp4"
   },
   {
     "stage": "zero",
@@ -4922,9 +5102,9 @@
     "task_id": 1,
     "seed": 29,
     "episode_index": 2,
-    "critic_score": 0.48826727271080017,
+    "critic_score": 0.4892284870147705,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_2.mp4"
   },
   {
     "stage": "zero",
@@ -4933,9 +5113,9 @@
     "task_id": 1,
     "seed": 29,
     "episode_index": 4,
-    "critic_score": 0.4882160425186157,
+    "critic_score": 0.4893639087677002,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_4.mp4"
   },
   {
     "stage": "zero",
@@ -4944,9 +5124,9 @@
     "task_id": 1,
     "seed": 29,
     "episode_index": 7,
-    "critic_score": 0.4882206916809082,
+    "critic_score": 0.4895511567592621,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_7.mp4"
   },
   {
     "stage": "zero",
@@ -4955,9 +5135,9 @@
     "task_id": 1,
     "seed": 29,
     "episode_index": 9,
-    "critic_score": 0.4882582724094391,
+    "critic_score": 0.489168256521225,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-29/videos/libero_goal_1/eval_episode_9.mp4"
   },
   {
     "stage": "zero",
@@ -4966,9 +5146,9 @@
     "task_id": 2,
     "seed": 17,
     "episode_index": 0,
-    "critic_score": 0.4891582429409027,
+    "critic_score": 0.4895484149456024,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "zero",
@@ -4977,9 +5157,9 @@
     "task_id": 2,
     "seed": 17,
     "episode_index": 2,
-    "critic_score": 0.49009016156196594,
+    "critic_score": 0.48927929997444153,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "zero",
@@ -4988,9 +5168,9 @@
     "task_id": 2,
     "seed": 17,
     "episode_index": 4,
-    "critic_score": 0.48941656947135925,
+    "critic_score": 0.4893103241920471,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "zero",
@@ -4999,9 +5179,9 @@
     "task_id": 2,
     "seed": 17,
     "episode_index": 7,
-    "critic_score": 0.4906131327152252,
+    "critic_score": 0.48955217003822327,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "zero",
@@ -5010,9 +5190,9 @@
     "task_id": 2,
     "seed": 17,
     "episode_index": 9,
-    "critic_score": 0.49021998047828674,
+    "critic_score": 0.4898967146873474,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-17/videos/libero_goal_2/eval_episode_9.mp4"
   },
   {
     "stage": "zero",
@@ -5021,9 +5201,9 @@
     "task_id": 2,
     "seed": 29,
     "episode_index": 0,
-    "critic_score": 0.48994091153144836,
+    "critic_score": 0.4897879660129547,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_0.mp4"
   },
   {
     "stage": "zero",
@@ -5032,9 +5212,9 @@
     "task_id": 2,
     "seed": 29,
     "episode_index": 2,
-    "critic_score": 0.4902418553829193,
+    "critic_score": 0.4893501400947571,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_2.mp4"
   },
   {
     "stage": "zero",
@@ -5043,9 +5223,9 @@
     "task_id": 2,
     "seed": 29,
     "episode_index": 4,
-    "critic_score": 0.490234375,
+    "critic_score": 0.48928871750831604,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_4.mp4"
   },
   {
     "stage": "zero",
@@ -5054,9 +5234,9 @@
     "task_id": 2,
     "seed": 29,
     "episode_index": 7,
-    "critic_score": 0.49050188064575195,
+    "critic_score": 0.48970460891723633,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4"
   },
   {
     "stage": "zero",
@@ -5065,8 +5245,8 @@
     "task_id": 2,
     "seed": 29,
     "episode_index": 9,
-    "critic_score": 0.4899582862854004,
+    "critic_score": 0.4897165596485138,
     "true_success_rate": 0.0,
-    "video_path": "/home/root/outputs/vla-benchmark-run2/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
+    "video_path": "/home/root/outputs/vla-benchmark-final/eval/zero/task-2/seed-29/videos/libero_goal_2/eval_episode_9.mp4"
   }
 ]

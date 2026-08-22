@@ -4,7 +4,7 @@ import argparse
 import csv
 import json
 import math
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -27,7 +27,8 @@ def collect(eval_root: Path) -> list[dict]:
     rows: list[dict] = []
     for info_path in sorted(eval_root.rglob("eval_info.json")):
         meta_path = info_path.parent / "run_meta.json"
-        if not meta_path.exists():
+        completed_path = info_path.parent / "COMPLETED"
+        if not meta_path.exists() or not completed_path.exists():
             continue
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         info = json.loads(info_path.read_text(encoding="utf-8"))
@@ -41,6 +42,7 @@ def collect(eval_root: Path) -> list[dict]:
                 "n": len(successes),
                 "successes": sum(successes),
                 "success_rate": float(np.mean(successes)),
+                "success_vector": json.dumps(successes, separators=(",", ":")),
                 "eval_info": str(info_path),
             }
         )
@@ -106,36 +108,54 @@ def validate_coverage(rows: list[dict], cfg: dict) -> None:
     task_ids = [int(value) for value in cfg["dataset"]["target_task_ids"]]
     seeds = [int(value) for value in cfg["protocol"]["train_seeds"]]
     budgets = [int(value) for value in cfg["protocol"]["budgets"]]
-    observed = {
+    observed_keys = [
         (str(row["stage"]), int(row["budget"]), int(row["task_id"]), int(row["seed"]))
         for row in rows
-    }
+    ]
+    observed = set(observed_keys)
     expected = set()
+    method_stage = str(cfg.get("method", {}).get("stage", "method"))
+    include_controls = bool(cfg["protocol"].get("include_controls", True))
     for task_id in task_ids:
         for seed in seeds:
-            expected.add(("zero", 0, task_id, seed))
-            expected.add(("language", 0, task_id, seed))
-            for stage in ("baseline", "method"):
+            if include_controls:
+                expected.add(("zero", 0, task_id, seed))
+                expected.add(("language", 0, task_id, seed))
+            for stage in ("baseline", method_stage):
                 for budget in budgets:
                     expected.add((stage, budget, task_id, seed))
     missing = sorted(expected - observed)
+    unexpected = sorted(observed - expected)
+    duplicates = sorted(key for key, count in Counter(observed_keys).items() if count > 1)
     if missing:
         preview = "\n".join(map(str, missing[:12]))
         raise ValueError(f"Experiment matrix incomplete ({len(missing)} missing):\n{preview}")
+    if unexpected:
+        preview = "\n".join(map(str, unexpected[:12]))
+        raise ValueError(f"Experiment matrix contains {len(unexpected)} unexpected cells:\n{preview}")
+    if duplicates:
+        preview = "\n".join(map(str, duplicates[:12]))
+        raise ValueError(f"Experiment matrix contains {len(duplicates)} duplicate cells:\n{preview}")
 
 
 def _write_csv(path: Path, rows: list[dict]) -> None:
     if not rows:
         return
+    fieldnames = list(rows[0])
+    fieldnames.extend(key for row in rows for key in row if key not in fieldnames)
     with path.open("w", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
 
 
 def _plot(path: Path, summary: list[dict]) -> None:
     fig, axis = plt.subplots(figsize=(6.4, 3.7))
-    for method, color in [("baseline", "#7c8799"), ("method", "#1267d5")]:
+    method_name = next(
+        (row["method"] for row in summary if row["method"] not in {"zero", "baseline"}),
+        "method",
+    )
+    for method, color in [("baseline", "#7c8799"), (method_name, "#1267d5")]:
         points = [row for row in summary if row["method"] in {method, "zero"}]
         points = sorted({row["budget"]: row for row in points}.values(), key=lambda row: row["budget"])
         if not points:
@@ -145,7 +165,8 @@ def _plot(path: Path, summary: list[dict]) -> None:
         lower = [100 * (row["success_rate"] - row["ci_low"]) for row in points]
         upper = [100 * (row["ci_high"] - row["success_rate"]) for row in points]
         axis.errorbar(x, y, yerr=[lower, upper], marker="o", linewidth=2, color=color, label=method)
-    axis.set(xlabel="Target demonstrations", ylabel="Success (%)", xticks=[0, 5, 10, 25], ylim=(0, 100))
+    ticks = sorted({int(row["budget"]) for row in summary})
+    axis.set(xlabel="Target demonstrations", ylabel="Success (%)", xticks=ticks, ylim=(0, 100))
     axis.grid(alpha=0.25)
     axis.legend(frameon=False)
     fig.tight_layout()
@@ -163,10 +184,16 @@ def main() -> None:
     rows = collect(eval_root)
     if not rows:
         raise SystemExit("No eval_info.json files found; refusing to create an empty/fake curve")
+    method_stage = str(cfg.get("method", {}).get("stage", "method"))
+    include_controls = bool(cfg["protocol"].get("include_controls", True))
+    included_stages = {"baseline", method_stage}
+    if include_controls:
+        included_stages.update({"zero", "language"})
+    rows = [row for row in rows if row["stage"] in included_stages]
     required_n = int(cfg["protocol"]["eval_episodes"])
-    bad = [row for row in rows if row["n"] < required_n]
+    bad = [row for row in rows if row["n"] != required_n]
     if bad:
-        raise ValueError(f"Runs below the required {required_n} episodes: {bad}")
+        raise ValueError(f"Runs not equal to the registered {required_n} episodes: {bad}")
     validate_coverage(rows, cfg)
     summary = summarize(rows)
     language = summarize_language(rows)
@@ -175,6 +202,26 @@ def main() -> None:
     _write_csv(result_dir / "per_run.csv", rows)
     _write_csv(result_dir / "cost_curve.csv", summary)
     _write_csv(result_dir / "language_control.csv", language)
+    validation = {
+        "schema_version": 1,
+        "status": "pass",
+        "evaluation_units": len(rows),
+        "unique_cells": len(
+            {
+                (row["stage"], row["budget"], row["task_id"], row["seed"])
+                for row in rows
+            }
+        ),
+        "episodes_per_unit": required_n,
+        "total_outcomes": sum(int(row["n"]) for row in rows),
+        "stages": {
+            stage: sum(row["stage"] == stage for row in rows)
+            for stage in sorted(included_stages)
+        },
+    }
+    (result_dir / "validation.json").write_text(
+        json.dumps(validation, indent=2) + "\n", encoding="utf-8"
+    )
     _plot(result_dir / "cost_curve.png", summary)
     print(result_dir)
 

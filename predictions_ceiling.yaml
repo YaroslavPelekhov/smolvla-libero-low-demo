@@ -1,0 +1,34 @@
+experiment: ceiling_extension_v6
+status: frozen_before_any_budget_1_or_2_training_or_evaluation
+rationale: >-
+  The registered 5/10/25 baseline is already at 91.7--95.0% success, so the assignment's
+  ceiling clause requires a lower-data regime where a left shift can be resolved. We add
+  strict nested 1- and 2-demonstration prefixes without changing the baseline recipe or CSWI.
+protocol:
+  tasks: [0, 1, 2]
+  budgets: [1, 2, 5, 10, 25]
+  train_seeds: [17, 29]
+  eval_seed: 4000
+  episodes_per_task_seed_point: 20
+  baseline_updates: 10000
+  method: cross_seed_weight_interpolation
+  partner_weight: 0.25
+hypotheses:
+  - id: H10
+    prediction: >-
+      Naive fine-tuning will show its largest unresolved data dependence between one and five
+      demonstrations; aggregate success at one demo will be below success at two demos, and both
+      will be below the five-demo point.
+  - id: H11
+    prediction: >-
+      CSWI will have its best chance to help at one or two demonstrations because optimization
+      variance is largest there, but the independent v4/v5 reversals make a sign change plausible.
+      We therefore predict a small positive average delta rather than superiority in every cell.
+  - id: H12
+    prediction: >-
+      On fresh reset states at budgets 5/10/25, CSWI will not reproduce the full seed-1000 gain;
+      any aggregate advantage will be smaller than five percentage points.
+stopping_rule: >-
+  Run the complete frozen 72-cell matrix (zero/language controls plus baseline and CSWI at all
+  five budgets), retain all 20 Boolean outcomes per cell, and report the result regardless of sign.
+  Do not change the coefficient, task subset, training steps, or reset seed after observing data.

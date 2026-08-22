@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "evaluation_units": 48,
+  "unique_cells": 48,
+  "episodes_per_unit": 20,
+  "total_outcomes": 960,
+  "stages": {
+    "zero": 6,
+    "language": 6,
+    "baseline": 18,
+    "stabilized": 18
+  }
+}

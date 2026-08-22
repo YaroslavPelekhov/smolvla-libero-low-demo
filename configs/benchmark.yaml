@@ -1,4 +1,4 @@
-# Completed compute-limited protocol for a single RTX 4070 Ti SUPER.
+# Confirmatory protocol for a single RTX 4070 Ti SUPER.
 dataset:
   repo_id: nvidia/LIBERO_LeRobot_v3
   revision: main
@@ -15,8 +15,9 @@ model:
   base: lerobot/smolvla_base
   vlm_model_name: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
   load_vlm_weights: false
-  seen_steps: 5000
-  adaptation_steps: 500
+  seen_steps: 100000
+  adaptation_steps: 10000
+  save_freq: 10000
   batch_size: 8
   num_workers: 4
   mixed_precision: bf16
@@ -29,14 +30,13 @@ protocol:
   eval_episodes: 20
   eval_batch_size: 4
   eval_async: false
+  strict_subset_stats: true
 
 method:
-  lora_rank: 16
-  lora_alpha: 16
-  max_num_transforms: 2
+  name: seen_anchored_normalization
 
 paths:
   manifest: artifacts/protocol_manifest.json
-  preregistration: artifacts/preregistration.json
-  outputs: outputs/benchmark
+  preregistration: artifacts/preregistration_v2.json
+  outputs: outputs/benchmark_corrected
   results: artifacts/results

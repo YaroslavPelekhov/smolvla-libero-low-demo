@@ -1,0 +1,89 @@
+diff --git a/src/lerobot/envs/configs.py b/src/lerobot/envs/configs.py
+index 312b0262..4c1218d3 100644
+--- a/src/lerobot/envs/configs.py
++++ b/src/lerobot/envs/configs.py
+@@ -353,6 +353,7 @@ class LiberoEnv(EnvConfig):
+         }
+     )
+     control_mode: str = "relative"  # or "absolute"
++    gripper_action_mode: str = "native"  # or "binary_01" for 1=open, 0=closed datasets
+ 
+     def __post_init__(self):
+         if self.fps <= 0:
+@@ -439,6 +440,7 @@ class LiberoEnv(EnvConfig):
+             gym_kwargs=self.gym_kwargs,
+             env_cls=env_cls,
+             control_mode=self.control_mode,
++            gripper_action_mode=self.gripper_action_mode,
+             episode_length=self.episode_length,
+             camera_name_mapping=self.camera_name_mapping,
+             is_libero_plus=self.is_libero_plus,
+diff --git a/src/lerobot/envs/libero.py b/src/lerobot/envs/libero.py
+index 17fc22bb..748a9eba 100644
+--- a/src/lerobot/envs/libero.py
++++ b/src/lerobot/envs/libero.py
+@@ -127,6 +127,7 @@ class LiberoEnv(gym.Env):
+         num_steps_wait: int = 10,
+         control_freq: int = 20,
+         control_mode: str = "relative",
++        gripper_action_mode: str = "native",
+         is_libero_plus: bool = False,
+         hard_reset: bool = True,
+     ):
+@@ -192,6 +193,12 @@ class LiberoEnv(gym.Env):
+             else self.episode_length
+         )
+         self.control_mode = control_mode
++        if gripper_action_mode not in {"native", "binary_01"}:
++            raise ValueError(
++                "gripper_action_mode must be 'native' or 'binary_01', "
++                f"got {gripper_action_mode!r}"
++            )
++        self.gripper_action_mode = gripper_action_mode
+         images = {}
+         for cam in self.camera_name:
+             images[self.camera_name_mapping[cam]] = spaces.Box(
+@@ -371,6 +378,11 @@ class LiberoEnv(gym.Env):
+                 f"Expected action to be 1-D (shape (action_dim,)), "
+                 f"but got shape {action.shape} with ndim={action.ndim}"
+             )
++        if self.gripper_action_mode == "binary_01":
++            # LeRobot binary datasets use 1=open, 0=closed, while native
++            # robosuite/LIBERO uses -1=open, +1=closed.
++            action = action.copy()
++            action[-1] = 1.0 - 2.0 * np.clip(action[-1], 0.0, 1.0)
+         raw_obs, reward, done, info = self._env.step(action)
+ 
+         is_success = self._env.check_success()
+@@ -411,6 +423,7 @@ def _make_env_fns(
+     init_states: bool,
+     gym_kwargs: Mapping[str, Any],
+     control_mode: str,
++    gripper_action_mode: str,
+     camera_name_mapping: dict[str, str] | None = None,
+     is_libero_plus: bool = False,
+ ) -> list[Callable[[], LiberoEnv]]:
+@@ -428,6 +441,7 @@ def _make_env_fns(
+             episode_index=episode_index,
+             n_envs=n_envs,
+             control_mode=control_mode,
++            gripper_action_mode=gripper_action_mode,
+             camera_name_mapping=camera_name_mapping,
+             is_libero_plus=is_libero_plus,
+             **local_kwargs,
+@@ -450,6 +464,7 @@ def create_libero_envs(
+     init_states: bool = True,
+     env_cls: Callable[[Sequence[Callable[[], Any]]], Any] | None = None,
+     control_mode: str = "relative",
++    gripper_action_mode: str = "native",
+     episode_length: int | None = None,
+     camera_name_mapping: dict[str, str] | None = None,
+     is_libero_plus: bool = False,
+@@ -511,6 +526,7 @@ def create_libero_envs(
+                 init_states=init_states,
+                 gym_kwargs=gym_kwargs,
+                 control_mode=control_mode,
++                gripper_action_mode=gripper_action_mode,
+                 camera_name_mapping=camera_name_mapping,
+                 is_libero_plus=is_libero_plus,
+             )

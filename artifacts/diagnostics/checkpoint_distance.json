@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "metric": "relative_l2_between_full_floating_point_checkpoints",
+  "records": [
+    {
+      "budget": 5,
+      "task_id": 0,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-5/task-0/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-5/task-0/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.002498602087434409,
+      "relative_l2": 0.025365773074935243,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 5,
+      "task_id": 1,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-5/task-1/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-5/task-1/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.002480020886605606,
+      "relative_l2": 0.025177197484752962,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 5,
+      "task_id": 2,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-5/task-2/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-5/task-2/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.002476189238603728,
+      "relative_l2": 0.025138302374378706,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 10,
+      "task_id": 0,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-10/task-0/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-10/task-0/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.0025506861523722016,
+      "relative_l2": 0.025894530959095472,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 10,
+      "task_id": 1,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-10/task-1/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-10/task-1/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.002519260699989345,
+      "relative_l2": 0.025575537957940833,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 10,
+      "task_id": 2,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-10/task-2/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-10/task-2/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.002517990275478006,
+      "relative_l2": 0.02556263579812257,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 25,
+      "task_id": 0,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-25/task-0/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-25/task-0/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.0025830695853090667,
+      "relative_l2": 0.026223298619932146,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 25,
+      "task_id": 1,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-25/task-1/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-25/task-1/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.0025755844174982535,
+      "relative_l2": 0.02614731782908302,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 25,
+      "task_id": 2,
+      "seeds": [
+        17,
+        29
+      ],
+      "checkpoints": [
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-25/task-2/seed-17/checkpoints/last/pretrained_model",
+        "/home/root/outputs/vla-benchmark-final/train/baseline/budget-25/task-2/seed-29/checkpoints/last/pretrained_model"
+      ],
+      "rms_delta": 0.002582423533603424,
+      "relative_l2": 0.02621674967161338,
+      "floating_tensors": 500,
+      "elements": 450046176
+    }
+  ]
+}

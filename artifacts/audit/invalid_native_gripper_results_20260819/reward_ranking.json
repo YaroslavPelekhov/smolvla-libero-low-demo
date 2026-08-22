@@ -1,0 +1,470 @@
+{
+  "n_checkpoints": 42,
+  "small_spearman": null,
+  "robometer_spearman": null,
+  "records": [
+    {
+      "key": [
+        "baseline",
+        5,
+        0,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.490013861656189,
+      "robometer": 0.40402610301971437
+    },
+    {
+      "key": [
+        "baseline",
+        5,
+        0,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4895524442195892,
+      "robometer": 0.4228459358215332
+    },
+    {
+      "key": [
+        "baseline",
+        5,
+        1,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4882861912250519,
+      "robometer": 0.21324396431446074
+    },
+    {
+      "key": [
+        "baseline",
+        5,
+        1,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48822144269943235,
+      "robometer": 0.20249256789684295
+    },
+    {
+      "key": [
+        "baseline",
+        5,
+        2,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4895599365234375,
+      "robometer": 0.37335402369499204
+    },
+    {
+      "key": [
+        "baseline",
+        5,
+        2,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48868501782417295,
+      "robometer": 0.34354597330093384
+    },
+    {
+      "key": [
+        "baseline",
+        10,
+        0,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4899240851402283,
+      "robometer": 0.38562908172607424
+    },
+    {
+      "key": [
+        "baseline",
+        10,
+        0,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48949692249298093,
+      "robometer": 0.3830710411071777
+    },
+    {
+      "key": [
+        "baseline",
+        10,
+        1,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4880892276763916,
+      "robometer": 0.24065390825271607
+    },
+    {
+      "key": [
+        "baseline",
+        10,
+        1,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48825417160987855,
+      "robometer": 0.22982950806617736
+    },
+    {
+      "key": [
+        "baseline",
+        10,
+        2,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48812403082847594,
+      "robometer": 0.29773858189582825
+    },
+    {
+      "key": [
+        "baseline",
+        10,
+        2,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48835631608963015,
+      "robometer": 0.31130459904670715
+    },
+    {
+      "key": [
+        "baseline",
+        25,
+        0,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48931726813316345,
+      "robometer": 0.37295321822166444
+    },
+    {
+      "key": [
+        "baseline",
+        25,
+        0,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4893672108650208,
+      "robometer": 0.37485000491142273
+    },
+    {
+      "key": [
+        "baseline",
+        25,
+        1,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48821170926094054,
+      "robometer": 0.2799100488424301
+    },
+    {
+      "key": [
+        "baseline",
+        25,
+        1,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48807297348976136,
+      "robometer": 0.2552965432405472
+    },
+    {
+      "key": [
+        "baseline",
+        25,
+        2,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48924025893211365,
+      "robometer": 0.3070417582988739
+    },
+    {
+      "key": [
+        "baseline",
+        25,
+        2,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4887830436229706,
+      "robometer": 0.28519203662872317
+    },
+    {
+      "key": [
+        "correct",
+        0,
+        0,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48951463103294374,
+      "robometer": 0.5360584497451782
+    },
+    {
+      "key": [
+        "correct",
+        0,
+        0,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48945860266685487,
+      "robometer": 0.5932653546333313
+    },
+    {
+      "key": [
+        "correct",
+        0,
+        1,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48861317038536073,
+      "robometer": 0.326409512758255
+    },
+    {
+      "key": [
+        "correct",
+        0,
+        1,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4890848219394684,
+      "robometer": 0.3794121742248535
+    },
+    {
+      "key": [
+        "correct",
+        0,
+        2,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4891164004802704,
+      "robometer": 0.3713205635547638
+    },
+    {
+      "key": [
+        "correct",
+        0,
+        2,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4894243836402893,
+      "robometer": 0.3893101930618286
+    },
+    {
+      "key": [
+        "method",
+        5,
+        0,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4895333409309387,
+      "robometer": 0.6198618054389954
+    },
+    {
+      "key": [
+        "method",
+        5,
+        0,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48997308015823365,
+      "robometer": 0.6113001823425293
+    },
+    {
+      "key": [
+        "method",
+        5,
+        1,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4885855674743652,
+      "robometer": 0.21214722692966462
+    },
+    {
+      "key": [
+        "method",
+        5,
+        1,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4886098623275757,
+      "robometer": 0.19603579342365265
+    },
+    {
+      "key": [
+        "method",
+        5,
+        2,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.49043025374412536,
+      "robometer": 0.4100252628326416
+    },
+    {
+      "key": [
+        "method",
+        5,
+        2,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4900848388671875,
+      "robometer": 0.37096773982048037
+    },
+    {
+      "key": [
+        "method",
+        10,
+        0,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48991437554359435,
+      "robometer": 0.5977196574211121
+    },
+    {
+      "key": [
+        "method",
+        10,
+        0,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.489761883020401,
+      "robometer": 0.6416077256202698
+    },
+    {
+      "key": [
+        "method",
+        10,
+        1,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.488259494304657,
+      "robometer": 0.23025137186050415
+    },
+    {
+      "key": [
+        "method",
+        10,
+        1,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4884588778018951,
+      "robometer": 0.21077452898025512
+    },
+    {
+      "key": [
+        "method",
+        10,
+        2,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48921188712120056,
+      "robometer": 0.34119964241981504
+    },
+    {
+      "key": [
+        "method",
+        10,
+        2,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4885279655456543,
+      "robometer": 0.3044577300548553
+    },
+    {
+      "key": [
+        "method",
+        25,
+        0,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48904299139976504,
+      "robometer": 0.3454833567142487
+    },
+    {
+      "key": [
+        "method",
+        25,
+        0,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4886662244796753,
+      "robometer": 0.6144049763679504
+    },
+    {
+      "key": [
+        "method",
+        25,
+        1,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48830018043518064,
+      "robometer": 0.2507659763097763
+    },
+    {
+      "key": [
+        "method",
+        25,
+        1,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.48825815320014954,
+      "robometer": 0.24429566264152527
+    },
+    {
+      "key": [
+        "method",
+        25,
+        2,
+        17
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4886984646320343,
+      "robometer": 0.3173758625984192
+    },
+    {
+      "key": [
+        "method",
+        25,
+        2,
+        29
+      ],
+      "true_success": 0.0,
+      "small_critic": 0.4884315073490143,
+      "robometer": 0.2924420475959778
+    }
+  ],
+  "policy_optimization_warning": "Neither critic is safe as a direct policy objective without held-out human/simulator audits; temporal shortcuts and terminal-state poses are exploitable."
+}

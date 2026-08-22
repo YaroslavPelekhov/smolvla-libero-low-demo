@@ -1,0 +1,27 @@
+# Development-only diagnostic on reset seed 2000; not confirmatory evidence.
+dataset:
+  repo_id: nvidia/LIBERO_LeRobot_v3
+  revision: main
+  local_dir: data/LIBERO_LeRobot_v3
+  seen_suite: libero_90
+  target_suite: libero_goal
+  target_task_ids: [0, 1, 2]
+
+model:
+  base: lerobot/smolvla_base
+
+protocol:
+  budgets: [25]
+  train_seeds: [17, 29]
+  eval_seed: 2000
+  eval_episodes: 20
+  include_controls: false
+
+method:
+  name: cross_seed_weight_interpolation
+  stage: stabilized
+  partner_weight: 0.25
+
+paths:
+  outputs: outputs/benchmark_v4_confirmatory
+  results: artifacts/diagnostics/cswi_k25_seed2000

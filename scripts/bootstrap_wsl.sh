@@ -31,6 +31,17 @@ fi
 git -C "$LEROBOT_PATH" fetch --tags --force
 git -C "$LEROBOT_PATH" checkout --detach "$LEROBOT_REVISION"
 
+# NVIDIA/LIBERO_LeRobot_v3 stores the gripper as 1=open, 0=closed. The pinned
+# LIBERO environment consumes native robosuite commands (-1=open, +1=closed),
+# so expose an explicit evaluation mode. The reverse check keeps reruns idempotent.
+GRIPPER_PATCH="$PROJECT_PATH/patches/lerobot_libero_binary_gripper.patch"
+if git -C "$LEROBOT_PATH" apply --check "$GRIPPER_PATCH"; then
+  git -C "$LEROBOT_PATH" apply "$GRIPPER_PATCH"
+elif ! git -C "$LEROBOT_PATH" apply --check --reverse "$GRIPPER_PATCH"; then
+  echo "LeRobot gripper patch does not match pinned revision $LEROBOT_REVISION" >&2
+  exit 2
+fi
+
 "$VENV_PATH/bin/python" -m pip install \
   -e "$LEROBOT_PATH[libero,smolvla,peft,robometer]"
 "$VENV_PATH/bin/python" -m pip install -e "$PROJECT_PATH[dev,bonus]"

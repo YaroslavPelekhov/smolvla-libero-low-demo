@@ -20,6 +20,7 @@ model:
   load_vlm_weights: false
   seen_steps: 100000
   adaptation_steps: 10000
+  save_freq: 10000
   batch_size: 8
   num_workers: 4
   mixed_precision: bf16
@@ -30,14 +31,15 @@ protocol:
   train_seeds: [17, 29]
   eval_seed: 1000
   eval_episodes: 20
+  eval_batch_size: 4
+  eval_async: false
+  strict_subset_stats: true
 
 method:
-  lora_rank: 16
-  lora_alpha: 16
-  max_num_transforms: 2
+  name: seen_anchored_normalization
 
 paths:
   manifest: artifacts/protocol_manifest.json
-  preregistration: artifacts/preregistration.json
-  outputs: outputs
+  preregistration: artifacts/preregistration_v2.json
+  outputs: outputs/benchmark_corrected
   results: artifacts/results

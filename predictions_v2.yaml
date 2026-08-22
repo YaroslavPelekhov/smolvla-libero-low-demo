@@ -1,0 +1,35 @@
+# Confirmatory hypotheses frozen after protocol audit and before the full 100k/10k runs.
+# The earlier 5k/500 run is retained only as an engineering pilot: it used target-suite-global
+# normalization and therefore cannot support a held-out claim.
+recorded_before_confirmatory_runs: true
+date: "2026-08-14"
+audit_evidence:
+  invalidated_run: "5k seen / 500 target updates"
+  reason: >-
+    Filtering dataset.episodes did not filter meta/stats.json; the normalizer used 52,042
+    target-suite frames, including demonstrations from held-out target tasks.
+  corrective_checks:
+    - selected-episode means and standard deviations matched raw parquet frames
+    - 500- and 1,000-step task-0 pilots remained at 0/8 and are excluded from confirmation
+hypotheses:
+  - id: H1
+    prediction: >-
+      With 100,000 seen updates, zero-shot success will be measurable but task-dependent;
+      cyclically wrong instructions will reduce mean success, showing language conditioning.
+  - id: H2
+    prediction: >-
+      Naive 10,000-step target fine-tuning will improve monotonically from 5 to 25 demos,
+      but the 5-demo point will be unstable because target-only action scaling is poorly estimated.
+  - id: H3
+    prediction: >-
+      Seen-anchored normalization will beat naive fine-tuning at all three budgets. Its largest
+      absolute benefit will occur at 5 demos, where a per-task variance estimate is least reliable.
+  - id: H4
+    prediction: >-
+      The learned progress critic will separate gross failures from near-completions but trail
+      Robometer against binary success; both rankings can reward visually plausible non-progress.
+expected_shape:
+  zero_shot_percent: 5
+  baseline_percent: {5: 12, 10: 24, 25: 38}
+  method_percent: {5: 24, 10: 36, 25: 48}
+  note: "Expectations are hypotheses, never replacements for measured outcomes."

@@ -87,8 +87,14 @@ def build_manifest(cfg: dict) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build and validate the fixed demo manifest")
     parser.add_argument("--config", default="configs/experiment.yaml")
+    parser.add_argument(
+        "--data-root",
+        help="Override dataset.local_dir without changing the frozen experiment config",
+    )
     args = parser.parse_args()
     cfg = load_config(args.config)
+    if args.data_root:
+        cfg["dataset"]["local_dir"] = args.data_root
     manifest = build_manifest(cfg)
     output = resolve(cfg["paths"]["manifest"])
     output.parent.mkdir(parents=True, exist_ok=True)

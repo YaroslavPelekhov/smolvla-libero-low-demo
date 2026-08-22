@@ -12,31 +12,20 @@
       42,
       58
     ],
+    "normalization_scope": "seen_anchor",
     "episode_index": 0,
-    "video": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4",
+    "video": "/home/root/outputs/vla-benchmark-final/eval/method/budget-5/task-0/seed-17/videos/libero_goal_0/eval_episode_0.mp4",
     "video_frames": 300,
     "figure": "artifacts/results/failures/failure-1.png"
   },
   {
-    "stage": "method",
-    "method": "method",
-    "budget": 10,
+    "stage": "zero",
+    "method": "correct",
+    "budget": 0,
     "task_id": 1,
     "seed": 17,
-    "episodes": [
-      13,
-      15,
-      16,
-      22,
-      36,
-      45,
-      66,
-      76,
-      116,
-      121
-    ],
     "episode_index": 0,
-    "video": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-10/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4",
+    "video": "/home/root/outputs/vla-benchmark-final/eval/zero/task-1/seed-17/videos/libero_goal_1/eval_episode_0.mp4",
     "video_frames": 300,
     "figure": "artifacts/results/failures/failure-2.png"
   },
@@ -45,7 +34,7 @@
     "method": "method",
     "budget": 25,
     "task_id": 2,
-    "seed": 17,
+    "seed": 29,
     "episodes": [
       6,
       10,
@@ -73,8 +62,9 @@
       154,
       164
     ],
-    "episode_index": 0,
-    "video": "/home/root/outputs/vla-benchmark-run2/eval/method/budget-25/task-2/seed-17/videos/libero_goal_2/eval_episode_0.mp4",
+    "normalization_scope": "seen_anchor",
+    "episode_index": 7,
+    "video": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-2/seed-29/videos/libero_goal_2/eval_episode_7.mp4",
     "video_frames": 300,
     "figure": "artifacts/results/failures/failure-3.png"
   }

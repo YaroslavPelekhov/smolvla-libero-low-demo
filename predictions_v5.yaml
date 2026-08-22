@@ -1,0 +1,43 @@
+# Frozen after v4 development and before constructing or evaluating BDAM on seed 3000.
+recorded_before_adaptive_checkpoint_construction: true
+date: "2026-08-21"
+method:
+  name: budget_and_dispersion_adaptive_merging
+  short_name: BDAM
+  construction: >-
+    For budgets 5 and 10, use CSTVI with partner weight 0.25. For budget 25,
+    compute reward-free relative L2 distance between the two complete target
+    checkpoints for each task. Use CSWI only for tasks at or above the within-budget
+    median distance; retain the baseline checkpoint below the median. The inclusive
+    median rule, cutoff 10, and coefficient 0.25 are frozen before evaluation.
+rationale:
+  - >-
+    CSTVI improved the development rerun at 5 and 10 demonstrations but over-regularized
+    the strong 25-demo policies. Regularization should therefore depend on data regime.
+  - >-
+    At 25 demonstrations, full-checkpoint interpolation is reserved for high seed
+    dispersion, where variance reduction is warranted; low-dispersion policies are
+    left unchanged to avoid unnecessary bias.
+confirmatory_protocol:
+  tasks: [0, 1, 2]
+  budgets: [5, 10, 25]
+  branches: [17, 29]
+  partner_weight: 0.25
+  eval_seed: 3000
+  episodes_per_cell: 20
+  baseline_rerun: true
+  primary_metric: aggregate simulator success over 120 paired episodes per budget
+  comparison: paired exact McNemar against a fresh baseline rerun on identical states
+hypotheses:
+  - id: H9
+    prediction: >-
+      BDAM will exceed the fresh baseline by at least one net success at each of 5,
+      10, and 25 demonstrations.
+  - id: H10
+    prediction: >-
+      The high-budget gate will avoid the T1 regression observed under unconditional
+      interpolation while retaining variance-reduction gains on selected tasks.
+stopping_rule: >-
+  No cutoff, coefficient, gate, checkpoint, task, reset state, or episode will be
+  changed after preregistration. All 18 BDAM cells and all 18 fresh baseline cells
+  are retained, including failures.

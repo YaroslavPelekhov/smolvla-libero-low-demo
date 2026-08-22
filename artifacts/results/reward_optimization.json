@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "optimizer": "argmax proxy score over four frozen policies per task/budget",
+  "audit_design": "Five deterministic videos score each proxy and select a checkpoint; simulator success is then computed on the remaining 15 episodes, which were not proxy-scored.",
+  "n_task_budget_groups": 9,
+  "candidates_per_group": 4,
+  "heldout_audit_episodes_per_candidate": 15,
+  "baseline_reference_success": 0.9333333333333333,
+  "candidate_pool_mean_success": 0.9018518518518519,
+  "oracle_mean_success": 0.9703703703703704,
+  "selectors": {
+    "small_critic": {
+      "mean_selected_true_success": 0.8592592592592594,
+      "delta_vs_baseline_reference": -0.07407407407407396,
+      "mean_regret_to_oracle": 0.11111111111111105,
+      "suboptimal_selections": 5,
+      "selections": [
+        {
+          "budget": 5,
+          "task_id": 0,
+          "selected_key": [
+            "method",
+            5,
+            0,
+            29
+          ],
+          "selected_proxy_score": 0.4895769476890564,
+          "selected_true_success": 0.4,
+          "audit_episodes": 15,
+          "oracle_true_success": 0.9333333333333333,
+          "regret": 0.5333333333333333
+        },
+        {
+          "budget": 5,
+          "task_id": 1,
+          "selected_key": [
+            "method",
+            5,
+            1,
+            29
+          ],
+          "selected_proxy_score": 0.48868518471717837,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 5,
+          "task_id": 2,
+          "selected_key": [
+            "baseline",
+            5,
+            2,
+            17
+          ],
+          "selected_proxy_score": 0.4885490655899048,
+          "selected_true_success": 0.8666666666666667,
+          "audit_episodes": 15,
+          "oracle_true_success": 0.8666666666666667,
+          "regret": 0.0
+        },
+        {
+          "budget": 10,
+          "task_id": 0,
+          "selected_key": [
+            "method",
+            10,
+            0,
+            29
+          ],
+          "selected_proxy_score": 0.48944804072380066,
+          "selected_true_success": 0.8666666666666667,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.1333333333333333
+        },
+        {
+          "budget": 10,
+          "task_id": 1,
+          "selected_key": [
+            "method",
+            10,
+            1,
+            17
+          ],
+          "selected_proxy_score": 0.4885995090007782,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 10,
+          "task_id": 2,
+          "selected_key": [
+            "method",
+            10,
+            2,
+            29
+          ],
+          "selected_proxy_score": 0.4884484946727753,
+          "selected_true_success": 0.7333333333333333,
+          "audit_episodes": 15,
+          "oracle_true_success": 0.9333333333333333,
+          "regret": 0.20000000000000007
+        },
+        {
+          "budget": 25,
+          "task_id": 0,
+          "selected_key": [
+            "method",
+            25,
+            0,
+            29
+          ],
+          "selected_proxy_score": 0.4895031571388245,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 25,
+          "task_id": 1,
+          "selected_key": [
+            "method",
+            25,
+            1,
+            17
+          ],
+          "selected_proxy_score": 0.4886107683181763,
+          "selected_true_success": 0.9333333333333333,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.06666666666666665
+        },
+        {
+          "budget": 25,
+          "task_id": 2,
+          "selected_key": [
+            "baseline",
+            25,
+            2,
+            17
+          ],
+          "selected_proxy_score": 0.488348126411438,
+          "selected_true_success": 0.9333333333333333,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.06666666666666665
+        }
+      ]
+    },
+    "robometer": {
+      "mean_selected_true_success": 0.9111111111111112,
+      "delta_vs_baseline_reference": -0.022222222222222143,
+      "mean_regret_to_oracle": 0.059259259259259234,
+      "suboptimal_selections": 4,
+      "selections": [
+        {
+          "budget": 5,
+          "task_id": 0,
+          "selected_key": [
+            "method",
+            5,
+            0,
+            17
+          ],
+          "selected_proxy_score": 0.661143684387207,
+          "selected_true_success": 0.6,
+          "audit_episodes": 15,
+          "oracle_true_success": 0.9333333333333333,
+          "regret": 0.33333333333333337
+        },
+        {
+          "budget": 5,
+          "task_id": 1,
+          "selected_key": [
+            "method",
+            5,
+            1,
+            29
+          ],
+          "selected_proxy_score": 0.5894451856613159,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 5,
+          "task_id": 2,
+          "selected_key": [
+            "method",
+            5,
+            2,
+            17
+          ],
+          "selected_proxy_score": 0.6612833738327026,
+          "selected_true_success": 0.8,
+          "audit_episodes": 15,
+          "oracle_true_success": 0.8666666666666667,
+          "regret": 0.06666666666666665
+        },
+        {
+          "budget": 10,
+          "task_id": 0,
+          "selected_key": [
+            "baseline",
+            10,
+            0,
+            29
+          ],
+          "selected_proxy_score": 0.6714261651039124,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 10,
+          "task_id": 1,
+          "selected_key": [
+            "method",
+            10,
+            1,
+            17
+          ],
+          "selected_proxy_score": 0.5851482033729554,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 10,
+          "task_id": 2,
+          "selected_key": [
+            "method",
+            10,
+            2,
+            17
+          ],
+          "selected_proxy_score": 0.6446815490722656,
+          "selected_true_success": 0.8666666666666667,
+          "audit_episodes": 15,
+          "oracle_true_success": 0.9333333333333333,
+          "regret": 0.06666666666666665
+        },
+        {
+          "budget": 25,
+          "task_id": 0,
+          "selected_key": [
+            "baseline",
+            25,
+            0,
+            29
+          ],
+          "selected_proxy_score": 0.6727254509925842,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 25,
+          "task_id": 1,
+          "selected_key": [
+            "baseline",
+            25,
+            1,
+            17
+          ],
+          "selected_proxy_score": 0.5891905188560486,
+          "selected_true_success": 1.0,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.0
+        },
+        {
+          "budget": 25,
+          "task_id": 2,
+          "selected_key": [
+            "baseline",
+            25,
+            2,
+            17
+          ],
+          "selected_proxy_score": 0.6596959471702576,
+          "selected_true_success": 0.9333333333333333,
+          "audit_episodes": 15,
+          "oracle_true_success": 1.0,
+          "regret": 0.06666666666666665
+        }
+      ]
+    }
+  },
+  "scope": "Finite-bank zeroth-order policy selection, not gradient optimization of SmolVLA. It is a direct test of whether maximizing each learned video reward improves policy choice."
+}

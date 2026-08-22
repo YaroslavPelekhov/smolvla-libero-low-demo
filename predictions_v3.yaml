@@ -1,0 +1,44 @@
+# Follow-up hypothesis frozen after observing the completed v2 matrix and before
+# evaluating any interpolated policy. The v2 outcomes motivate this study and are
+# not reused as outcomes for the new method.
+recorded_before_stabilized_evaluation: true
+date: "2026-08-20"
+method:
+  name: cross_seed_weight_interpolation
+  short_name: CSWI
+  construction: >-
+    For each task and demonstration budget, train the same baseline twice as already
+    specified (seeds 17 and 29). Construct two policies without reward access:
+    0.75*w17 + 0.25*w29 and 0.25*w17 + 0.75*w29. Preserve the corresponding
+    target-only normalizer and all non-weight processor metadata.
+rationale:
+  - >-
+    On the completed baseline matrix, seed-specific failures are complementary: at
+    task 2 / budget 5 the two policies score 17/20 and 16/20 but their success union
+    covers 19/20 paired initial states.
+  - >-
+    Both policies descend from the same initialization and training recipe, so a
+    conservative interpolation can reduce seed-specific displacement while remaining
+    close to each trained endpoint.
+confirmatory_protocol:
+  tasks: [0, 1, 2]
+  budgets: [5, 10, 25]
+  branches: [17, 29]
+  partner_weight: 0.25
+  episodes_per_cell: 20
+  primary_metric: aggregate simulator success over 120 episodes per budget
+  comparison: paired exact McNemar against the corresponding baseline branch
+hypotheses:
+  - id: H5
+    prediction: >-
+      CSWI will improve aggregate success at budget 5 by at least 1.7 percentage
+      points (two additional successes of 120) and will not reduce aggregate success
+      at budgets 10 or 25.
+  - id: H6
+    prediction: >-
+      The improvement will concentrate in task 2, where baseline failures differ most
+      across training seeds; task 1 should remain at its 100 percent ceiling.
+stopping_rule: >-
+  No policy weight, checkpoint, or mixing coefficient will be selected using LIBERO
+  simulator reward. The fixed 0.25 coefficient is evaluated for all 18 cells; all
+  outcomes are retained, including degradations.

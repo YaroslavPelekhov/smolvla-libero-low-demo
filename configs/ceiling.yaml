@@ -1,0 +1,46 @@
+# Preregistered ceiling extension requested by the task specification.
+dataset:
+  repo_id: nvidia/LIBERO_LeRobot_v3
+  revision: main
+  local_dir: data/LIBERO_LeRobot_v3
+  seen_suite: libero_90
+  target_suite: libero_goal
+  target_task_ids: [0, 1, 2]
+  target_prompts:
+    0: open the middle drawer of the cabinet
+    1: put the bowl on the stove
+    2: put the wine bottle on top of the cabinet
+
+model:
+  base: lerobot/smolvla_base
+  vlm_model_name: HuggingFaceTB/SmolVLM2-500M-Video-Instruct
+  load_vlm_weights: false
+  seen_steps: 100000
+  adaptation_steps: 10000
+  # Operational checkpoint only: 8k permits exact resume if WSL is interrupted.
+  save_freq: 8000
+  batch_size: 8
+  num_workers: 4
+  mixed_precision: bf16
+  n_action_steps: 10
+
+protocol:
+  budgets: [1, 2, 5, 10, 25]
+  train_seeds: [17, 29]
+  eval_seed: 4000
+  eval_episodes: 20
+  eval_batch_size: 4
+  eval_async: false
+  strict_subset_stats: true
+  include_controls: true
+
+method:
+  name: cross_seed_weight_interpolation
+  stage: stabilized
+  partner_weight: 0.25
+
+paths:
+  manifest: artifacts/protocol_manifest_ceiling.json
+  preregistration: artifacts/preregistration_ceiling.json
+  outputs: outputs/ceiling_v6
+  results: artifacts/results_ceiling

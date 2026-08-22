@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "metric": "cosine_between_cross_seed_target_task_vectors",
+  "records": [
+    {
+      "budget": 5,
+      "task_id": 0,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.40647007865350077,
+      "l2_left": 30.042373847318466,
+      "l2_right": 29.988688908182795,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 5,
+      "task_id": 1,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.42230634819195384,
+      "l2_left": 29.518705736214347,
+      "l2_right": 29.67817470051464,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 5,
+      "task_id": 2,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.4109988122636516,
+      "l2_left": 29.278985031937374,
+      "l2_right": 29.118938646746575,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 10,
+      "task_id": 0,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.3895980998391961,
+      "l2_left": 31.525092874545976,
+      "l2_right": 31.380352757575583,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 10,
+      "task_id": 1,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.410095852099782,
+      "l2_left": 30.714549757215952,
+      "l2_right": 30.931443047374717,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 10,
+      "task_id": 2,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.3987502844675525,
+      "l2_left": 30.45081979232053,
+      "l2_right": 30.53356585374999,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 25,
+      "task_id": 0,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.38000447040746804,
+      "l2_left": 32.566520724603556,
+      "l2_right": 32.404922953068585,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 25,
+      "task_id": 1,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.39259871113643396,
+      "l2_left": 32.45087455439553,
+      "l2_right": 32.46659048113462,
+      "floating_tensors": 500,
+      "elements": 450046176
+    },
+    {
+      "budget": 25,
+      "task_id": 2,
+      "seeds": [
+        17,
+        29
+      ],
+      "cosine": 0.37665969230398794,
+      "l2_left": 32.32494003527181,
+      "l2_right": 32.221615628396904,
+      "floating_tensors": 500,
+      "elements": 450046176
+    }
+  ]
+}

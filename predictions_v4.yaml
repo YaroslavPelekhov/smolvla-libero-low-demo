@@ -1,0 +1,44 @@
+# Frozen after the complete CSWI phase and before constructing or evaluating any
+# task-vector-interpolated checkpoint. The previous matrix motivates the mechanism;
+# none of its success outcomes are reused for the confirmatory comparison below.
+recorded_before_task_vector_construction: true
+date: "2026-08-20"
+method:
+  name: cross_seed_task_vector_interpolation
+  short_name: CSTVI
+  construction: >-
+    For seed s, define the target adaptation vector delta_s as the difference
+    between its target-finetuned checkpoint and its own seen-pretrained checkpoint.
+    Construct w'_s = w_seen_s + 0.75*delta_s + 0.25*delta_partner. Preserve the
+    anchor target processor and target-only normalization statistics.
+rationale:
+  - >-
+    CSWI mixes complete checkpoints although target branches 17 and 29 descend from
+    different seen-pretraining seeds. This confounds sharing the target adaptation
+    direction with averaging independently pretrained seen policies.
+  - >-
+    CSTVI holds each seen anchor fixed and shares only the displacement attributable
+    to the allowed target demonstrations, isolating the intended regularizer.
+confirmatory_protocol:
+  tasks: [0, 1, 2]
+  budgets: [5, 10, 25]
+  branches: [17, 29]
+  partner_weight: 0.25
+  eval_seed: 2000
+  episodes_per_cell: 20
+  baseline_rerun: true
+  primary_metric: aggregate simulator success over 120 paired episodes per budget
+  comparison: paired exact McNemar against a fresh baseline rerun on the same states
+hypotheses:
+  - id: H7
+    prediction: >-
+      CSTVI will exceed the fresh baseline rerun by at least one net success at each
+      of 5, 10, and 25 demonstrations. The expected benefit is largest at 5 demos.
+  - id: H8
+    prediction: >-
+      Relative to full-checkpoint CSWI, preserving the seen anchor will prevent the
+      ceiling-task regressions previously observed at task 1 / budgets 10 and 25.
+stopping_rule: >-
+  The 0.25 coefficient is inherited unchanged from the prior preregistration. No
+  coefficient, task gate, checkpoint, reset state, or episode will be selected using
+  simulator reward. All 18 CSTVI cells and all 18 fresh baseline cells are retained.

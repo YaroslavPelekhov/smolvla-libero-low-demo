@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "dataset": {
+    "path": "/home/root/data/LIBERO_LeRobot_v3/libero_goal/data/chunk-000/file-000.parquet",
+    "task_index": 1,
+    "episode_index": 1,
+    "action_values": [0.0, 1.0],
+    "first_close_transition": {
+      "action_frame_79": 1.0,
+      "action_frame_80": 0.0,
+      "state_qpos_frame_79": [0.03995841, -0.03996633],
+      "state_qpos_frame_140": [0.00298764, -0.01454083]
+    },
+    "interpretation": "1=open, 0=closed"
+  },
+  "native_libero_15_step_probe": {
+    "command_-1": [0.03904727, -0.03904868],
+    "command_0": [0.02043413, -0.02043785],
+    "command_+1": [0.00095304, -0.00095452],
+    "interpretation": "-1=open, +1=closed"
+  },
+  "bridge": "g_env = 1 - 2 * clip(g_dataset, 0, 1)",
+  "causal_check": {
+    "checkpoint": "method/budget-25/task-1/seed-17",
+    "same_eval_seed": 1000,
+    "before": {
+      "successes": 0,
+      "episodes": 20,
+      "source": "/home/root/outputs/vla-benchmark-final/audit/invalid_native_gripper_eval_20260819/eval/method/budget-25/task-1/seed-17/eval_info.json"
+    },
+    "after_diagnostic": {
+      "successes": 8,
+      "episodes": 8,
+      "source": "/home/root/outputs/vla-benchmark-final/diagnostics/gripper-fix-task1-method25-seed17/eval_info.json"
+    },
+    "after_confirmatory": {
+      "successes": 19,
+      "episodes": 20,
+      "source": "/home/root/outputs/vla-benchmark-final/eval/method/budget-25/task-1/seed-17/eval_info.json"
+    }
+  }
+}

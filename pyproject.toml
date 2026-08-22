@@ -14,12 +14,12 @@ dependencies = [
   "pyarrow>=18,<26",
   "pyyaml>=6.0,<7",
   "scipy>=1.14,<2",
+  "safetensors>=0.5,<1",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.3,<9", "ruff>=0.12,<1"]
 bonus = ["av>=15,<16", "torch>=2.7,<3", "torchvision>=0.22,<1"]
-report = ["pillow>=11,<12", "reportlab>=4.2,<5"]
 
 [project.scripts]
 vla-download = "vla_budget.download:main"
@@ -31,6 +31,15 @@ vla-progress = "vla_budget.progress_critic:main"
 vla-bonus = "vla_budget.bonus:main"
 vla-failures = "vla_budget.failures:main"
 vla-doctor = "vla_budget.doctor:main"
+vla-subset = "vla_budget.subset:main"
+vla-soup = "vla_budget.model_soup:main"
+vla-compare = "vla_budget.compare_methods:main"
+vla-verify = "vla_budget.verify_submission:main"
+vla-distance = "vla_budget.checkpoint_distance:main"
+vla-task-vector = "vla_budget.task_vector_soup:main"
+vla-alignment = "vla_budget.task_vector_alignment:main"
+vla-consensus-vector = "vla_budget.consensus_task_vector:main"
+vla-adaptive-merge = "vla_budget.adaptive_merge:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/vla_budget"]
