@@ -1,4 +1,4 @@
 # NVIDIA driver 560.94 exposes CUDA 12.6 in WSL; do not let pip resolve CUDA 13 wheels.
 torch==2.7.1
 torchvision==0.22.1
-torchcodec==0.5
+torchcodec==0.16.0
