@@ -20,7 +20,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.3,<9", "ruff>=0.12,<1"]
+dev = ["pytest>=8.3,<10", "ruff>=0.12,<1"]
 bonus = ["av>=15,<16", "torch>=2.7,<3", "torchvision>=0.22,<1"]
 
 [project.urls]
