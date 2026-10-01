@@ -10,7 +10,7 @@ readme = "README.md"
 authors = [{ name = "Yaroslav Pelekhov", email = "pelekhovym@my.msu.ru" }]
 requires-python = ">=3.11,<3.13"
 dependencies = [
-  "huggingface-hub>=0.34,<2",
+  "huggingface-hub>=0.34,<3",
   "matplotlib>=3.9,<4",
   "numpy>=2.0,<3",
   "pyarrow>=18,<26",
